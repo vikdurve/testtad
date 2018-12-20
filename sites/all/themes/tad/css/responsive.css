@@ -1,0 +1,1877 @@
+
+@media screen and (max-width: 1200px) {
+    /*Syllabus 1200*/
+
+    .leftfoundation-coursecontent {
+        padding-left: 0;
+    }
+
+    /*Syllabus 1200 ends*/
+    /*Footer 1200*/
+
+    .tad-footer {
+        padding: 40px 25px 55px;
+    }
+
+    /*Footer 1200 ends*/
+}
+
+@media screen and (max-width: 1024px) {
+
+    /*Navbar 1024*/
+
+    /*Navbar white theme 1024*/
+
+    .navWhiteTheme .tad-nav {
+        padding: 15px;
+    }
+
+    .deskLoginBoxpWrp, .deskFrgtPassBoxpWrp, .frgtPassThankuWrp {
+        right: 15px;
+    }
+
+
+    /*1024 starts*/
+
+    /* Reusable components 1024 */
+
+    .tadSubheading {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    /* Reusable components 1024 ends */
+    /*Banner Services 1024*/
+    .bannerServices {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /*Banner Services 1024 ends*/
+
+
+
+
+
+
+
+
+    /*Explore video tutorials 1024*/
+
+    .exploreVideoTutsContentArea {
+        padding: 0 15px 40px;
+    }
+
+    .exploreVideoTutsTabBtns {
+        padding-left: 15px;
+    }
+
+        .exploreVideoTutsTabBtns .nav-tabs .nav-link {
+            padding: 4px 10px 3px;
+        }
+    /*Explore video tutorials 1024 ends*/
+
+    /*Overview 1024*/
+
+    .overviewContent {
+        padding: 20px 0 0;
+    }
+
+        .overviewContent .imgArea {
+            margin-right: 15px;
+        }
+
+    .overview .txtArea {
+        margin-left: 15px;
+        padding-top: 15px;
+    }
+
+    /*Overview 1024 ends*/
+
+    /*About Us intro 1024*/
+
+    .aboutUsIntro {
+    }
+
+    .aboutUsIntro {
+        padding: 60px 0px;
+    }
+
+    /*About Us intro 1024 ends*/
+
+    /*In collaboration 1024*/
+
+    .inCollabWrp .inCollab {
+        padding: 0;
+    }
+
+    /*In collaboration 1024 ends*/
+
+    /**********Cart page 1024*********/
+
+    /*Cart 1024*/
+
+    .cart-items-wrap {
+        margin-right: 15px;
+    }
+
+    .cart-item .image-area {
+        margin-right: 15px;
+    }
+
+    .cart-item .right-area {
+        padding-right: 0;
+    }
+
+    /*Cart 1024 ends*/
+
+    /**********Cart page 1024 ends*********/
+
+
+    /*Footer 1024*/
+
+    /*.footerLinksWrp {
+        padding: 50px 0;
+    }
+
+    .footerWrp .contactUsLinks {
+        padding-left: 8%;
+    }*/
+
+    /*Footer 1024 ends*/
+}
+
+/*1024 ends*/
+
+@media screen and (max-width: 991px) {
+
+    /*991 styling starts*/
+
+    .tabHidden {
+        display: none;
+    }
+
+    .tabVisible {
+        display: inline-block;
+    }
+
+
+
+    /*Navbar 991*/
+
+    /*Navbar white theme 991*/
+
+    .navWhiteTheme .tad-nav .hamphoneicon .greyicon {
+        display: inline-block;
+    }
+
+    .navWhiteTheme .tad-nav .hamphoneicon .whiteicon {
+        display: none;
+    }
+
+    .navWhiteTheme .tad-nav .main-menu-btn-icon, .navWhiteTheme .tad-nav .main-menu-btn-icon, .navWhiteTheme .tad-nav .main-menu-btn-icon:before, .navWhiteTheme .tad-nav .main-menu-btn-icon:after {
+        background: #676767;
+    }
+
+    /*Navbar white theme 991 ends*/
+
+    div.tad-nav div.mobHamSocial a {
+        display: inline-block;
+        border: none;
+        color: #fff;
+        background: #aaaaaa;
+        border: 1px solid #aaaaaa;
+        padding: 0;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+        div.tad-nav div.mobHamSocial a:hover {
+            color: #aaaaaa;
+            background: #fff;
+            border: 1px solid #aaaaaa;
+        }
+
+
+
+    .tad-nav {
+        padding: 10px 15px;
+    }
+
+        .tad-nav.open {
+            background: #fff;
+        }
+
+            .tad-nav.open .main-nav {
+                background: #fff;
+                height: 100vh;
+            }
+
+            /*.tad-nav .main-menu-btn-icon, .tad-nav .main-menu-btn-icon:before, .tad-nav .main-menu-btn-icon:after {
+        background: #fff;
+    }*/
+
+            .tad-nav.open .main-menu-btn-icon, .tad-nav.open .main-menu-btn-icon:before, .tad-nav.open .main-menu-btn-icon:after {
+                background: #676767;
+            }
+
+
+        .tad-nav .main-menu a {
+            color: #303030;
+            padding: 22px 15px;
+            margin-right: 0;
+            border-top: 1px solid #f0f0f0;
+            font-size: 18px;
+        }
+
+        .tad-nav .main-menu li:first-child a {
+            border-top: none;
+        }
+
+    #main-menu:before {
+        display: none;
+    }
+
+    .tad-nav .main-menu .highlighted {
+        background: #b43528;
+        color: #fff;
+    }
+
+    .tad-nav .main-menu .btnContactCounsellor {
+        display: none;
+    }
+
+
+    .main-menu ul a:before {
+        content: "";
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #676767;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+    }
+
+    .main-menu ul a {
+        position: relative;
+        color: #676767;
+    }
+
+    .tad-nav .main-menu ul a {
+        font-size: 14px;
+        padding: 12px 15px 15px 33px;
+        border: none;
+        margin-left: 15px;
+    }
+
+    .main-menu ul li {
+        border: none;
+    }
+
+    .tad-nav .mobHamSocialWrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0 0 0px;
+        position: fixed;
+        bottom: 15px;
+        height: 10vh;
+        display: none;
+    }
+
+    .tad-nav.open .mobHamSocialWrp {
+        display: flex;
+    }
+
+    .main-menu {
+        height: calc(100vh - 25vh);
+        overflow: scroll;
+        margin: 0 -15px;
+    }
+
+
+
+
+    .mobHamSocial {
+        display: block;
+    }
+
+    .tad-nav .sm-blue a .sub-arrow::before {
+        content: "";
+        background: url(../images/mobiledropdownmenu/nonactiveangledown.png) no-repeat center;
+        position: absolute;
+        right: 15px;
+        height: 10px;
+        width: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .tad-nav .sm-blue a.highlighted .sub-arrow::before {
+        content: "";
+        background: url(../images/mobiledropdownmenu/activeangledown.png) no-repeat center;
+        position: absolute;
+        right: 15px;
+        height: 10px;
+        width: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+
+    .tad-nav .mobHamSocialWrp .btnLogin {
+        border: 1px solid #68c990;
+        color: #68c990;
+        width: 100px;
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    /*Login interactions 991*/
+
+    .main-menu.clse {
+        display: none !important;
+    }
+
+    /*.deskLoginBoxpWrp.open {
+        display: block;
+    }*/
+
+    .deskLoginBox, .deskFrgtPassBox, .frgtPassThankuBox {
+        border-radius: 0;
+        height: 100%;
+        margin: 0;
+        padding: 40px 30px;
+    }
+
+    .deskLoginBoxpWrp, .deskFrgtPassBoxpWrp, .frgtPassThankuWrp {
+        transform: none;
+        position: fixed;
+        top: 67px;
+        background: #fff;
+        width: 100%;
+        right: 0;
+    }
+
+        .deskLoginBoxpWrp:before, .deskFrgtPassBoxpWrp:before, .frgtPassThankuWrp:before {
+            display: none;
+        }
+
+
+    .deskLoginBoxHeading {
+        text-align: center;
+    }
+
+
+    /*Login interactions 991 ends*/
+    /*Navbar 991 ends*/
+
+    /*991 starts*/
+
+    /*Navbar 991*/
+
+    /*.tadNavbar .rightArea {
+        display: none;
+    }
+
+    .deskHamDiv {
+        display: block;
+    }*/
+
+    /*Mobile dropdown menu 991*/
+    /*.mobHamMenu .imgArea {
+        box-shadow: 2px 0px 9.6px 0.4px rgba(0, 0, 0, 0.08);
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+        .mobHamMenu .imgArea .imgRight a {
+            margin-right: 15px;
+        }
+
+            .mobHamMenu .imgArea .imgRight a:last-child {
+                margin-right: 0;
+            }
+
+    .mobHamMenu.open {
+        transform: translateX(0%);
+    }
+
+    .mobHamMenu .footerWrp {
+        border: none;
+        border: none;
+        justify-content: space-between;
+        margin: 10px 15px 0;
+    }
+
+        .mobHamMenu .footerWrp .footSocial {
+            text-align: left;
+            margin: 0;
+        }
+
+        .mobHamMenu .footerWrp .btnArea .btnLogin {
+            color: #68c990;
+            border: 1px solid #68c990;
+            width: 100px;
+            max-width: 100%;
+            padding: 8px 0 7px;
+        }
+
+        .mobHamMenu .footerWrp .footSocial li {
+            margin-right: 10px;
+        }
+
+            .mobHamMenu .footerWrp .footSocial li:last-child {
+                margin-right: 0;
+            }
+
+            .mobHamMenu .footerWrp .footSocial li a {
+                margin-right: 0;
+            }
+
+    .mobDropMenu {
+        display: none;
+        padding: 12px 18px;
+    }
+
+        .mobDropMenu.open {
+            display: block;
+        }
+
+    .mobMenuLink {
+        position: relative;
+        display: block;
+    }
+
+    .mobMenuDropHead:after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../images/mobiledropdownmenu/nonactiveangledown.png) no-repeat;
+        height: 8px;
+        width: 15px;
+    }
+
+    .mobMenuDropHead.open:after {
+        background: url(../images/mobiledropdownmenu/activeangledown.png) no-repeat;
+    }
+
+    .mobMenuDropHead.open {
+        background: #b43528;
+        color: #fff;
+    }
+
+    .mobDropMenu .mobMenuDropLink {
+        display: block;
+        padding-left: 15px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+        .mobDropMenu .mobMenuDropLink:before {
+            content: "";
+            font-size: 22px;
+            position: absolute;
+            left: 0;
+            background: #676767;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+        }
+
+    .mobMenuLink {
+        padding: 20px 15px 19px;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .mobDropMenu .mobMenuDropLink:last-child {
+        margin-bottom: 0;
+    }
+
+
+    .mobNavlinks li:first-child .mobMenuLink {
+        border-top: 0;
+    }*/
+    /*Mobile dropdown menu 991 ends*/
+
+    /*Navbar 991 ends*/
+
+    /*TADVedanta 991*/
+    .mentorWrp .mentor .txtArea {
+        padding: 15px 10px;
+    }
+
+    /*TADVedanta 991 ends*/
+
+    /*Why upskill 991*/
+
+    .rstImg {
+        max-width: 45%;
+    }
+
+    .rsgBoxHeading {
+        font-size: 12px;
+    }
+
+    .rsgTxt {
+        font-size: 12px;
+    }
+
+    .rsgBox {
+        height: 160px;
+        width: 160px;
+    }
+
+        .rsgBox.yellow {
+            bottom: 200px;
+        }
+
+        .rsgBox.violet {
+            bottom: 200px;
+        }
+
+        .rsgBox.green {
+            top: 5%;
+        }
+
+    /*.whyUpskill {
+        padding: 85px 0 50px;
+    }*/
+
+
+
+    /*Why upskill 991 ends*/
+
+    /*Explore video tutorials 991*/
+
+    /*.exploreVideoTutsTabs {
+        padding-right: 15px;
+    }*/
+
+    .tabHighlights {
+        padding-left: 15px;
+    }
+
+        .tabHighlights li {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .tabHighlights .btnArea {
+            margin-top: 25px;
+        }
+
+    .exploreVideoTutsTabBtns .nav-tabs .nav-link {
+        padding: 4px 10px 3px;
+    }
+
+
+    .exploreVideoTutsWrp {
+        padding: 100px 0 35px;
+    }
+
+
+    /*Explore video tutorials 991 ends*/
+
+    /*Tadvedanta 991*/
+    .tadvedantaWrp {
+        padding: 100px 0 60px;
+    }
+    /*Tadvedanta 991 ends*/
+
+    /*Overview 991*/
+
+    .overviewContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .overviewContent .imgArea, .overview .txtArea {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .overviewContent .imgArea {
+            text-align: center;
+            margin: 0 auto;
+            order: 2;
+        }
+
+    .overview .txtArea {
+        text-align: center;
+        margin: 0 auto 5px;
+        order: 1;
+        padding-top: 0;
+    }
+
+        .overview .txtArea p:first-child {
+            display: block;
+        }
+
+        .overview .txtArea p {
+            display: none;
+            line-height: 1.6;
+        }
+
+    /*Overview 991 ends*/
+
+    /*Foundation & Advanced Courses 991*/
+
+    .fnaCoursesWrp {
+        padding: 100px 25px 40px;
+    }
+
+    /*Foundation & Advanced Courses 991 ends*/
+
+    /*See how each 991*/
+
+    .seeHowEachWrp {
+        padding: 100px 0 45px;
+    }
+    /*See how each 991 ends*/
+
+    /* In the news 991 */
+
+    .inTheNews .post .postTitle {
+        font-size: 16px;
+    }
+
+    .inTheNews .post .postTxt {
+        font-size: 12px;
+    }
+
+    .inTheNews .post .date {
+        font-size: 12px;
+    }
+
+    .inTheNews {
+        padding: 45px 30px 30px;
+    }
+
+        .inTheNews .postWrp .post {
+            margin-right: 30px;
+        }
+
+    /* In the news 991 ends */
+
+
+    /*Gradient banner 991*/
+    /*Gradient banner cart page 991*/
+
+    .cart-page .gradientBannerItemHeading {
+        margin-right: 15px;
+    }
+
+    .cart-page .gradientBannerItemTxt {
+        font-size: 14px;
+    }
+
+    .cart-page .gradientBanner .offer-txt {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+
+    .cart-page .gradientBanner {
+        justify-content: space-between;
+    }
+
+    /*Gradient banner cart page 991 ends*/
+    /*Gradient banner 991 ends*/
+
+    /**********Cart page 991*********/
+
+    /*Cart 991*/
+
+    .tad-cart {
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    .cart-total-wrap {
+        margin: 0 -15px;
+        padding: 20px 15px 30px;
+        flex-basis: 100%;
+        text-align: center;
+        background: #fbfbfb;
+    }
+
+    .cart-total {
+        background: none;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0 15px;
+    }
+
+    .cart-items-wrap {
+        margin: 20px 0 0 0;
+    }
+
+    .total-cart-value .actual-amt, .total-cart-value .discount-perc {
+        font-size: 13px;
+    }
+
+    .cart-total-txt {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .cart-total-wrap .btn-area {
+        margin-top: 16px;
+    }
+
+    .cart-total-wrap .btnGreen {
+        width: 300px;
+    }
+
+    .cart-item {
+        padding: 10px 0;
+        flex-direction: column;
+        padding-left: 150px;
+        position: relative;
+    }
+
+        .cart-item .image-area {
+            margin-right: 10px;
+        }
+
+    .cart-item-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .cart-item-meta p {
+        font-size: 12px;
+    }
+
+    .video-author {
+        font-size: 12px;
+    }
+
+    .cart-item-meta .lang {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 0 5px;
+    }
+
+
+
+    .cart-item .right-area {
+        flex-direction: column;
+        padding: 12px 0 0 0;
+        max-width: 180px;
+        align-items: flex-start;
+    }
+
+    .cart-item .image-area {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        max-width: 140px;
+    }
+
+    .cart-item-remove {
+        width: 100%;
+        text-align: right;
+        margin-top: 12px;
+    }
+
+    /*Cart 991 ends*/
+
+    /**********Cart page 991 ends*********/
+
+    /*Footer 991*/
+
+
+
+    .footer-links .footer-link {
+        font-size: 14px;
+        flex-basis: 50%;
+        margin-bottom: 18px;
+    }
+
+    .tad-footer {
+        padding: 0 0 80px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+        .tad-footer .footer-div {
+            padding: 20px 0;
+            border-right: none;
+            border-bottom: 1px solid #e4e4e4;
+            flex-direction: row;
+            flex-basis: 100%;
+            flex-wrap: wrap;
+            width: 330px;
+            max-width: 100%;
+        }
+
+            .tad-footer .footer-div.footer-links {
+                flex-basis: 100%;
+            }
+
+    .footer-social {
+        position: absolute;
+        bottom: 25px;
+        margin-top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-contact-det .footer-link i {
+        position: static;
+        left: auto;
+        transform: none;
+        margin-right: 6px;
+    }
+
+    .footer-div .footer-link:last-child {
+        flex-basis: 100%;
+    }
+
+    .footer-contact-det .footer-link {
+        padding-left: 0;
+    }
+
+
+    /*Footer 991 ends*/
+
+}
+
+
+/*991 styling ends*/
+
+@media screen and (max-width: 767px) {
+    /* Reusable components 767 */
+
+
+    .mob-pd-t-0 {
+        padding-top: 0;
+    }
+
+    mob-mg-t-0 {
+        margin-top: 0;
+    }
+
+
+    .deskHidden {
+        display: inline-block;
+    }
+
+    .tadHeading {
+        margin-bottom: 40px;
+    }
+
+    .tadSubheading {
+        display: none;
+    }
+
+    .mobHidden {
+        display: none;
+    }
+
+    .fs40 {
+        font-size: 24px;
+    }
+
+    .fs24 {
+        font-size: 20px;
+    }
+
+    .fs20 {
+        font-size: 16px;
+    }
+
+    .fs18 {
+        font-size: 14px;
+    }
+
+    .fs16 {
+        font-size: 14px;
+    }
+
+    .fs13 {
+        font-size: 12px;
+    }
+
+
+    /* Reusable components 767 ends */
+
+
+
+    /*Banner Area 767*/
+
+
+
+    .bannerAreaWrp .hp-banner1 {
+        background: url(../images/banner/hpbannermob.png) no-repeat;
+    }
+
+    .bannerAreaWrp .hp-banner {
+        height: 450px;
+        background-size: cover;
+    }
+
+    .bannerHeading {
+        letter-spacing: 1px;
+    }
+
+    .bannerHeading {
+        letter-spacing: 1px;
+    }
+
+    .bannerAreaContent {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .bannerSubHeading.secondLine {
+        display: none;
+    }
+
+    .bannerVid {
+        justify-content: center;
+    }
+
+    .bannerAreaWrp:after {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .bannerVidIcon {
+        margin-right: 12px;
+    }
+
+    .bannerVidInfo {
+        text-align: left;
+    }
+
+    .bannerVidDuration {
+        line-height: 1;
+    }
+
+    /*Banner Area 767 ends*/
+
+    /*Banner Services 767*/
+    .bannerServicesWrp {
+        top: -35px;
+    }
+
+    .bannerServices {
+        flex-direction: column;
+        padding: 0 20px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 34.4px 5.6px rgba(0, 0, 0, 0.05);
+        background: #fff;
+    }
+
+        .bannerServices .svcBox {
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+            background: #fff;
+            border-radius: 0;
+            box-shadow: none;
+            align-items: center;
+        }
+
+            .bannerServices .svcBox:last-child {
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+
+        .bannerServices .imgArea img {
+            max-width: 45px;
+        }
+
+    /*Banner Services 767 ends*/
+
+    /*Explore animated 767*/
+    .exploreAnimated {
+        display: none;
+    }
+    /*Explore animated 767 ends*/
+
+
+
+    /*See how each 767*/
+
+
+    .seeHowEachBoxWrp {
+        flex-wrap: wrap;
+    }
+
+    .seeHowEachBox {
+        width: 50%;
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+
+    .seeHowEachBoxTxt {
+        font-size: 12px;
+    }
+
+    .seeHowEachBox img {
+        margin-bottom: 22px;
+    }
+    /*See how each 767 ends*/
+
+    /*Why upskill 767*/
+
+    .rstImg {
+        display: none;
+    }
+
+    .rsgBox.blue {
+        /*order: 1;*/
+        left: initial;
+        top: 75px;
+        right: 0;
+    }
+
+    .rsgBox.yellow {
+        /*order: 2;*/
+        left: 0;
+        bottom: 270px;
+    }
+
+    .rsgBox.green {
+        /*order: 3;*/
+        top: initial;
+        right: 0;
+        left: initial;
+        transform: none;
+        bottom: 180px;
+    }
+
+    .rsgBox.violet {
+        /*order: 4;*/
+        left: 0;
+        bottom: 85px;
+    }
+
+    .rsgBox.orange {
+        /*order: 5;*/
+        bottom: 0;
+    }
+
+    .readySteadyGo {
+        height: 600px;
+        max-width: 340px;
+        margin: 0 auto 35px;
+    }
+
+    .rsgBox.blue, .rsgBox.yellow, .rsgBox.green, .rsgBox.violet, .rsgBox.orange {
+        height: 170px;
+        width: 170px;
+    }
+
+    .rstImgMob {
+        position: absolute;
+        left: 0;
+        top: 0px;
+    }
+
+
+
+    /*Why upskill 767 ends*/
+
+    /*Explore video tutorials 767*/
+
+    .exploreVideoTutsTabs .imgArea {
+        border: 10px solid #fff;
+    }
+
+    .vidLangToggle {
+        top: 20px;
+        right: 20px;
+    }
+
+
+    .exploreVideoTutsTabBtns .nav-tabs {
+        margin-bottom: 30px;
+    }
+
+    .tabHighlights {
+        margin-top: 15px;
+    }
+
+    .exploreVideoTutsContentArea {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .exploreVideoTutsTabs, .tabHighlights {
+        flex-basis: 100%;
+    }
+
+    .exploreVideoTutsTabs {
+        padding-right: 0;
+    }
+
+    .exploreVideoTutsTabBtns {
+        width: 100%;
+    }
+
+    .tabHighlights .btnArea {
+        text-align: center;
+    }
+
+    .vidTutImg {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .exploreVideoTutsTabBtns .nav-tabs .nav-link {
+        padding: 4px 10px 3px;
+    }
+
+    /*Explore video tutorials 767 ends*/
+
+
+    /*TADVedanta 767*/
+
+
+
+    .mentorWrp .mentor .txtArea {
+        padding: 20px;
+        width: 49%;
+        height: 80%;
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -3px;
+    }
+
+    .mentorWrp {
+        flex-wrap: wrap;
+        padding: 0 0 10px;
+    }
+
+        .mentorWrp .mentor {
+            flex-basis: 100%;
+            align-items: center;
+            margin-right: 0;
+            max-width: 480px;
+            margin: 0 auto 20px;
+        }
+
+            .mentorWrp .mentor.collapse {
+                display: none;
+            }
+
+                .mentorWrp .mentor.collapse.show {
+                    display: block;
+                }
+
+
+            /*.mentorWrp .mentor:last-child {
+                margin-bottom: 0;
+            }*/
+
+            .mentorWrp .mentor:last-child {
+                margin-right: auto;
+            }
+
+            .mentorWrp .mentor .imgArea {
+                width: 49%;
+                display: inline-block;
+            }
+
+    .mentorSocial a {
+        text-align: center;
+        height: 20px;
+        width: 20px;
+    }
+
+    .mentorName {
+        margin-bottom: 2px;
+    }
+
+    .mentorOrg {
+        margin-bottom: 8px;
+    }
+
+    .tadvedanta .linkArea .lnkViewMore {
+        color: #b0213b;
+    }
+
+    .tadvedanta .btnArea {
+        margin-top: 20px;
+    }
+
+
+
+
+    /*TADVedanta 767 ends*/
+
+    /*Foundation & Advanced Courses 767*/
+
+
+
+    .videoCardsCarousel {
+        display: block;
+    }
+
+        .videoCardsCarousel .videoSummary {
+            display: none;
+        }
+
+    .videoCardItem .txtArea {
+        padding: 30px 0 0;
+    }
+
+    .videoCardItem {
+        padding: 15px;
+        background: #fff;
+        max-width: 480px;
+        margin: 0 auto 20px;
+        box-shadow: 0px 8px 34.4px 5.6px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+
+
+
+        .videoCardItem .imgArea img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 180px;
+        }
+
+
+
+    .videoCardHead.fs16 {
+        font-size: 16px;
+    }
+
+    .videoCardHead {
+        margin-bottom: 0;
+    }
+
+    .videoCardItem .txtArea .courseCount {
+        margin-bottom: 2px;
+    }
+
+    /*Foundation & Advanced Courses 767 ends*/
+
+    /*Co-created with industry leaders 767, Our hiring partners 767*/
+
+    .industryLeadersCarousel, .hiringPartnersCarousel, .accomplishmentsCarousel {
+        display: block;
+    }
+
+    .industryLeadersCarousel, .hiringPartnersCarousel, .accomplishmentsCarousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .industryLeadersCarousel .item, .hiringPartnersCarousel .item, .accomplishmentsCarousel .item {
+            flex-basis: 33.33%;
+            margin-bottom: 30px;
+        }
+
+    .tadDivHeading {
+        font-size: 16px;
+    }
+
+    .industryLeaders {
+        padding: 0 0 40px;
+    }
+
+    .tadDivHeading {
+        margin-bottom: 35px;
+    }
+
+    /*Co-created with industry leaders ends, Our hiring partners ends*/
+
+
+    /*Get your best career advice desktop ends, Get TAD certified desktop*/
+
+    .shinyBgDiv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .getBestCareerAdvice .shinyBgDiv .txtArea {
+        margin-bottom: 18px;
+    }
+
+
+    .shinyBgDivWrp .formArea {
+        margin-left: 0;
+    }
+
+    .shinyBgDiv .btnTrans {
+        max-width: 160px;
+        padding: 5px 0;
+    }
+
+    .getBestCareerAdvice.shinyBgDivWrp .formArea {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .getBestCareerAdvice.shinyBgDivWrp .formArea .btn {
+            margin-top: 15px;
+        }
+
+
+
+    /*Get your best career advice desktop ends, Get TAD certified desktop 767 ends*/
+
+    /*Certificates 767*/
+
+    .certificatesContent {
+        padding: 0;
+    }
+
+        .certificatesContent .imgArea {
+            margin-bottom: 30px;
+        }
+
+    .certificates {
+        margin-bottom: 0;
+    }
+
+    /*Certificates 767 ends*/
+
+    /*Syllabus 767*/
+
+    .tadsyllabus-innerwrap {
+        margin-bottom: 60px;
+    }
+
+    div.tadsyllabus-cardwrapper {
+        padding-top: 15px;
+    }
+
+    /*Syllabus 767 ends*/
+
+    /*Gradient banner 767*/
+
+    .gradientBannerItem {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0 45px;
+    }
+
+        .gradientBannerItem .leftArea {
+            margin-bottom: 27px;
+        }
+
+
+
+    .gradientBannerItemHeading {
+        margin-bottom: 15px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+
+    .brandsHeading {
+        margin-bottom: 15px;
+    }
+
+    .gradientBannerCarousel .owl-dots {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .gradientBannerItem .rightArea .brands {
+        justify-content: center;
+    }
+
+    /*Gradient 2 767*/
+    .gradientBanner2 .gradientBannerItem {
+        padding: 50px 0 30px;
+    }
+
+    .gradientBannerItem .rightArea .courseCTAMain {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .gradientBannerItem .rightArea .courseCTA {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .gradientBannerItemSubHeading {
+        margin-bottom: 5px;
+    }
+
+    .gradientBannerItemHeading2 {
+        margin-bottom: 5px;
+    }
+
+    .gradientBannerItem .leftArea .courseMeta li {
+        margin-right: 15px;
+    }
+
+    .gradientBannerItem .leftArea .courseMeta {
+        margin-bottom: 18px;
+    }
+
+    .gradientBanner2 .gradientBannerItem .leftArea {
+        margin-bottom: 30px;
+    }
+
+    .gradientBanner2 .gradientBannerItem .rightArea .courseCTAMain {
+        margin-bottom: 45px;
+    }
+
+    .gradientBannerItem .rightArea .courseCTA .courseAmt {
+        font-size: 30px;
+        margin-right: 5px;
+    }
+
+    .gradientBannerItem .rightArea .courseCTA select {
+        font-size: 12px;
+    }
+    /*Gradient 2 767 ends*/
+
+
+    /*Gradient banner cart page 767*/
+
+    .cart-page .gradientBannerItemHeading {
+        display: none;
+    }
+
+    .cart-page .gradientBanner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .cart-page .gradientBanner .offer-txt {
+            margin-left: 0;
+        }
+
+    .cart-page .gradientBannerItemTxt {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .cart-page .gradientBanner {
+        padding: 30px 0 20px;
+        flex-direction: column;
+    }
+
+    /*Gradient banner cart page 767 ends*/
+
+    /*Gradient banner 767 ends*/
+
+    /*About Us intro 767*/
+
+    .aboutUsIntro {
+        padding: 20px 0;
+    }
+
+    .aboutUsIntro {
+        flex-direction: column-reverse;
+    }
+
+        .aboutUsIntro .imgArea .topArea {
+            display: none;
+        }
+
+        .aboutUsIntro .imgArea {
+            align-items: center;
+        }
+
+            .aboutUsIntro .imgArea .bottomArea {
+                box-shadow: 0px 8px 34.4px 5.6px rgba(0, 0, 0, 0.05);
+            }
+
+        .aboutUsIntro .txtArea {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .aboutUsIntro .txtArea, .aboutUsIntro .imgArea {
+            padding: 0;
+        }
+
+            .aboutUsIntro .txtArea .box {
+                margin-bottom: 18px;
+            }
+
+    .aboutUsIntroHead {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    /*About Us intro 767 ends*/
+
+    /**********Cart page 767*********/
+
+    /*Cart 767*/
+
+
+
+    .cart-item-title {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .cart-payable-amt {
+        color: #822f23;
+    }
+
+    .cart-item .left-area {
+        padding-top: 10px;
+    }
+
+    /*Cart 767 ends*/
+    /**********Cart page 767 ends*********/
+
+
+
+
+
+    /*Mentor popup 767*/
+
+    .mentorPopup * {
+        font-size: 13px;
+    }
+
+    .mentorPopup .mentorName, .mentorPopup .mentorPopHeading {
+        font-size: 14px;
+    }
+
+    .mentorPopup .coursesTaught .courseName {
+        padding: 0px 5px;
+    }
+
+    .mentorPopup .mentorIntro {
+        margin: 5px 0 20px;
+    }
+
+    .mentorPopup .workExp {
+        margin: 20px 0 25px;
+    }
+
+
+
+    .mentorPopup .mentorBio {
+        padding: 0;
+    }
+
+    /*Mentor popup 767 ends*/
+
+    /*Certificate popup 767*/
+
+    .certPopup .certSummary {
+        font-size: 13px;
+    }
+
+    .certPopup .affiliation {
+        margin: 22px 0 32px;
+    }
+
+
+    /*Certificate popup 767 ends*/
+
+    /*Become mentor popup 767*/
+
+    .becomeMentorPopup {
+        padding: 15px 15px 50px;
+    }
+
+    .becomeMentorPopupHeading {
+        font-size: 22px;
+    }
+
+    .becomeMentorPopup .btnArea {
+        padding-top: 28px;
+    }
+
+
+
+    .becomeMentorPopup .closeBtnArea {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    /*Become mentor popup 767 ends*/
+
+
+
+
+
+
+    /*In collaboration 767*/
+
+    .inCollabWrp .quoteTxt {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .inCollabWrp .counter span {
+        font-size: 30px;
+    }
+
+    .inCollabWrp .counter i {
+        font-size: 30px;
+    }
+
+
+    .inCollabWrp .inCollab {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inCollabWrp .tvdWrp,
+    .inCollabWrp .uxpWrp {
+        width: 100%;
+        padding: 20px 25px 25px;
+        border-radius: 10px;
+        max-width: 480px;
+    }
+
+    .inCollabWrp .quote {
+        margin-top: 28px;
+    }
+
+    .inCollabWrp .collabCounter {
+        max-width: 265px;
+    }
+
+    .inCollabWrp .tvdWrp {
+        margin: 0 0 20px 0;
+    }
+
+
+    .inCollabWrp .quoteTxt:before {
+        display: none;
+    }
+
+
+    /*In collaboration 767 ends*/
+
+    /* In the news 767 */
+
+    .inTheNews .postWrp .post:first-child {
+        display: block;
+        padding-right: 0;
+    }
+
+    .inTheNews .postWrp .post {
+        display: none;
+        width: 100%;
+    }
+
+    .inTheNews {
+        padding: 20px 15px 30px;
+        border-radius: 0;
+    }
+
+        .inTheNews .postWrp {
+            flex-direction: column;
+        }
+
+        /*.inTheNews .post .imgSec {
+        margin-bottom: -15px;
+}*/
+
+        .inTheNews .post .postImgSmall {
+            top: -45px;
+            left: 20px;
+            max-height: 45px;
+            padding: 0 10px;
+        }
+
+        .inTheNews .post .contentSec {
+            margin-top: 15px;
+        }
+
+        .inTheNews .post .imgSec {
+            height: auto;
+            border-radius: 0;
+        }
+
+            .inTheNews .post .imgSec .postImg {
+                width: 100%;
+                max-width: 100%;
+            }
+
+    .inTheNewsWrp {
+        padding: 77px 0 60px;
+    }
+
+    .inTheNews .post .postTxt {
+        margin-bottom: 5px;
+    }
+
+    .inTheNews .linkArea {
+        margin-top: 25px;
+    }
+
+    /* In the news 767 */
+
+    /*faq page 767*/
+    .gradientBannerItemTxt {
+        margin: 0 auto;
+    }
+
+    .faq-section {
+        padding: 40px 0;
+    }
+
+    .acc-toggle > a:after {
+        left: 15px;
+    }
+
+    .faq-que a {
+        padding: 21px 15px 21px 50px;
+    }
+
+    .faq-ans {
+        padding: 20px 15px;
+        font-size: 12px;
+    }
+
+
+    /*faq page 767 ends*/
+
+
+}
+
+/*767 styling ends*/
+
+@media screen and (max-width: 480px) {
+
+
+    /*Gradient banner 480*/
+    /*Gradient 2 480*/
+
+    .gradientBannerItem .leftArea .courseMeta li {
+        font-size: 12px;
+    }
+
+    /*Gradient 2 480 ends*/
+
+    /*Gradient banner 480 ends*/
+    /* === Footer 480 === */
+    /*.footerLinksWrp .linksWrp li {
+        width: 49%;
+    }
+
+    .footerLinksWrp .linksWrp.contactUsLinks .footSocial li {
+        width: 40px;
+    }
+
+    .footerLinksWrp .linksWrp.contactUsLinks li {
+        width: 100%;
+    }
+
+    .footerLinksWrp .contactUsLinks .link a {
+        padding-left: 20px;
+    }*/
+}
+/* === Footer 480 ends === */
+
+@media screen and (max-width: 359px) {
+
+    /*TADVedanta 359*/
+
+    .mentorWrp .mentor .txtArea {
+        height: auto;
+        padding: 10px;
+    }
+    /*TADVedanta 359 ends*/
+
+    /*Why upskill 359*/
+
+    .rsgBox.blue, .rsgBox.yellow, .rsgBox.green, .rsgBox.violet, .rsgBox.orange {
+        height: 155px;
+        width: 155px;
+    }
+
+    .rsgBoxHeading {
+        font-size: 11px;
+    }
+
+    .rsgTxt {
+        font-size: 11px;
+    }
+    /*Why upskill 359 ends*/
+
+    /*Mobile dropdown menu 359*/
+
+    .tad-nav .main-menu div.mobHamSocial a {
+        font-size: 15px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        margin-right: 8px;
+    }
+
+    /*Mobile dropdown menu 359 ends*/
+
+    /*Mentor popup 359 ends*/
+
+    .mentorPopup {
+        padding: 15px;
+    }
+
+        .mentorPopup .coursesTaught .courseName {
+            padding: 0 3px;
+            font-size: 12px;
+        }
+
+    /*Mentor popup 359*/
+
+    /**********Cart page 359*********/
+
+    /*Cart 359*/
+
+    .cart-payable-amt .discount-perc, .cart-payable-amt .actual-amt {
+        margin-left: 5px;
+    }
+
+    /*Cart 359 ends*/
+
+    /**********Cart page 359 ends*********/
+    /*Homepage banner area 359*/
+
+    .with, .industry-recog {
+        font-size: 14px;
+    }
+
+    /*Homepage banner area 359 ends*/
+    /*Login interactions 359*/
+
+    .deskLoginBox, .deskFrgtPassBox, .frgtPassThankuBox.defaultFormBox {
+        padding: 40px 15px;
+    }
+
+    .btnGoHome {
+        width: auto;
+    }
+
+    /*Login interactions 359 ends*/
+}

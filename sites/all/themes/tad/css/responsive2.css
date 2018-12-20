@@ -1,0 +1,258 @@
+@import "normalize.css";
+
+@import "sm-core-css.css";
+
+@import "animation.css";
+
+@import "navbartheme.css";
+
+@import "main.css";
+
+@import "main2.css";
+
+@import "responsive.css";
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) {  } */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {  } */
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1320px) {
+
+    .frequently-ask-main {
+        padding: 70px 100px 20px;
+    }
+
+    .coursewrp {
+        padding: 40px 0 35px;
+    }
+
+    /****1320****/
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1199px) {
+
+    .career-pathwrp {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    /**/
+
+    .frequently-ask-main .details {
+        width: 48%;
+        padding-bottom: 30px;
+    }
+
+    .frequently-ask-main {
+        padding: 50px 30px 20px;
+    }
+
+        .frequently-ask-main .details h4 {
+            padding-bottom: 20px;
+        }
+
+    /***/
+
+    .course-main {
+        justify-content: center;
+        padding: 50px 0px 20px;
+    }
+
+    .course-box {
+        margin: 0 19px 0px;
+        margin-bottom: 35px;
+        flex-basis: 250px;
+    }
+
+
+    /**992**/
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+
+    .career-pathwrp {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+        .career-pathwrp .tadContainer {
+            padding: 0 0px;
+        }
+
+    .career-path-frame {
+        width: 29%;
+        margin: 10px;
+    }
+
+
+
+    /**768**/
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .understanding {
+        padding: 0 0px;
+    }
+
+    .hidden-xs {
+        display: none;
+    }
+
+
+    .understandingWrp {
+        padding-top: 60px;
+        padding-bottom: 45px;
+    }
+
+    .course-prog-box .arrow-down {
+        display: none;
+    }
+
+    .course-prog-box .arrow-up {
+        display: none;
+    }
+
+    .mg-t-25 {
+        margin-top: 0px;
+    }
+
+    .course-prog-contain {
+        height: 180px;
+        box-shadow: none;
+    }
+
+    .course-prog-main {
+        padding-bottom: 20px;
+    }
+
+    .understandingWrp .tadContainer {
+        padding-right: 0px;
+    }
+
+    /******/
+
+    .career-pathwrp {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+        .career-pathwrp .tadHeading.fs24 {
+            font-size: 20px;
+        }
+
+        .career-pathwrp .tadHeading {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .career-pathwrp .tadContainer {
+            padding: 0 50px;
+        }
+
+    .career-path-frame {
+        width: 100%;
+        margin: 10px 15px;
+    }
+
+    .career-path-main {
+        padding-top: 0px;
+    }
+
+    .career-path-main {
+        height: 470px;
+        overflow-y: scroll;
+    }
+
+    .tadSubheading {
+        display: none;
+    }
+
+    /**/
+
+    .frequently-askwrp {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+
+
+    .frequently-ask-main .details {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .frequently-ask-main {
+        padding: 10px 0px 5px;
+    }
+
+        .frequently-ask-main .details p {
+            font-size: 12px;
+        }
+
+        .frequently-ask-main .details h4 {
+            padding-bottom: 10px;
+        }
+
+    .freq-hide {
+        display: none;
+    }
+
+    /***/
+
+    .course-box {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .course-box p {
+            display: none;
+        }
+
+        .course-box h4 {
+            padding: 15px 15px 5px;
+            text-align: center;
+        }
+
+        .course-box span {
+            padding: 0px 15px 10px;
+            display: block;
+            text-align: center;
+        }
+
+    .course-type {
+        width: 108px;
+        height: 30px;
+        background: url('../images/course-page/img-3.png');
+        margin: auto;
+    }
+
+        .course-type h5 {
+            line-height: 2.5;
+        }
+
+    .course-main {
+        justify-content: center;
+        padding: 0 0px 20px;
+    }
+
+    /* 767 ends*/
+}
+
+@media screen and (max-width: 480px) {
+
+    .career-pathwrp .tadContainer {
+        padding: 0 0px;
+    }
+
+
+
+    /* ===  480 ends === */
+}

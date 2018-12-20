@@ -1,0 +1,562 @@
+﻿
+/*==============Start of the raj css 27-10-2018=================*/
+.tadsyllabus-cardwrapper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.tadsyllabus-individualcards {
+    width: 500px;
+    height: 250px;
+    border-radius: 8px;
+    padding: 13px 0px;
+    position: relative;
+    border: 1px solid #efefef;
+    box-shadow: 0px -14px 0px 0px #923629;
+    margin-right: 30px;
+}
+
+    .tadsyllabus-individualcards:last-child {
+        margin-right: 0px;
+    }
+
+.smallsyllabus-individualcards {
+    height: 220px;
+}
+
+.tadsyllabus-individualcards.active {
+    border: 1px solid #b04233;
+    box-shadow: 0px -14px 1px 0px #923629;
+}
+
+    .tadsyllabus-individualcards.active:after {
+        content: "";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-bottom: 1px solid #923629;
+        border-left: 1px solid #923629;
+        bottom: -7px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        transform: rotate(-44deg);
+        background: #fff;
+        z-index: 1;
+    }
+
+.tadsyllabus-individualcards:after {
+    content: none;
+}
+
+.syllabusheading-panel {
+    display: flex;
+    justify-content: center;
+}
+
+    .syllabusheading-panel .syllabus-heading {
+        color: #303030;
+        font-size: 24px;
+        text-align: center;
+        padding-right: 8px;
+    }
+
+.syllabuscards-listingpanel .labeltext {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.syllabuscards-listingpanel .contenttext {
+    color: #303030;
+    font-size: 14px;
+}
+
+.syllabuscards-listingpanel {
+    text-align: center;
+    padding: 12px 0;
+}
+
+    .syllabuscards-listingpanel .list-inline-item {
+        width: 31%;
+        border-right: 1px solid #aaaaaa;
+    }
+
+        .syllabuscards-listingpanel .list-inline-item:last-child {
+            border-right: 0px;
+        }
+
+.paymentsyllabus-div {
+    text-align: center;
+}
+
+    .paymentsyllabus-div h6 {
+        color: #822f23;
+        font-size: 24px;
+    }
+
+.syllabusenroll-btnwrap {
+    padding: 5px 0px;
+    text-align: center;
+}
+
+    .syllabusenroll-btnwrap .enrollbtn-syllabus {
+        background: #68c990;
+        border-radius: 5px;
+        width: 180px;
+        height: 40px;
+        display: inline-block;
+        margin: 0 auto;
+        padding-top: 10px;
+        color: #fff;
+    }
+
+.syllabus-prequities {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+    .syllabus-prequities .prequitiesbtn-link {
+        color: #b0213b;
+        font-size: 14px;
+        border-bottom: 1px solid #b0213b;
+        padding-bottom: 2px;
+    }
+
+.lockedelement-div h6 {
+    text-align: center;
+    padding: 3px 0 5px;
+}
+
+    .lockedelement-div h6 span {
+        color: #676767;
+        font-size: 14px;
+        vertical-align: sub;
+    }
+
+.lockedelement-content {
+    color: #aaaaaa;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 45px;
+}
+
+.tadsyllabus-tabcontent {
+    padding-top: 60px;
+}
+
+.commoncourse-heading {
+    color: #aaaaaa;
+    font-size: 18px;
+}
+
+.coursefoundation-accordion {
+    border-right: 1px solid #ddd;
+    margin-right: 15px;
+}
+
+.coursefound-accinnerwrap {
+    width: 700px;
+}
+
+.courseacc-headpanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 2px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.courseacc-bodypanel {
+    border-bottom: 1px solid #ddd;
+}
+
+.individualcourse-accordionpanel:last-child .courseacc-bodypanel {
+    border-bottom: 0px;
+}
+
+.courseacc-headpanel .accheading {
+    font-size: 16px;
+    color: #303030;
+}
+
+.courseacc-headpanel .acchead-time {
+    font-size: 14px;
+    color: #303030;
+}
+
+.coursecontent-listingpanel {
+    padding: 10px 0px 5px 85px;
+}
+
+    .coursecontent-listingpanel li {
+        padding-bottom: 8px;
+    }
+
+        .coursecontent-listingpanel li span {
+            color: #676767;
+            font-size: 14px;
+            padding-left: 5px;
+        }
+
+.coursedownload-syllabuswrap {
+    padding-top: 25px;
+    padding-left: 85px;
+}
+
+.downloadsyllabus-link {
+    font-size: 14px;
+    color: #b0213b;
+}
+
+    .downloadsyllabus-link .fa-download {
+        padding-left: 5px;
+        font-size: 20px;
+    }
+
+    .downloadsyllabus-link:hover, .downloadsyllabus-link:focus {
+        color: #b0213b;
+    }
+
+.foundationproject-divwrap {
+    padding-top: 42px;
+}
+
+.individualproject-cards {
+    width: 255px;
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 12px 9px 5px 0px #f9f9f9;
+    border: 1px solid #efefef;
+    display: inline-block;
+}
+
+.topproject-cardhead h6 {
+    font-size: 14px;
+    color: #303030;
+    width: 175px;
+    min-height: 35px;
+}
+
+.topproject-cardhead {
+    padding: 0px 20px;
+    margin: 20px 0px;
+    border-left: 5px solid #6fc4ea;
+}
+
+.bottomproject-cardbody {
+    padding: 5px 20px 0px;
+}
+
+    .bottomproject-cardbody p {
+        color: #aaaaaa;
+        font-size: 14px;
+    }
+
+.courseproject-owlcarousel {
+    padding-top: 15px;
+}
+
+.servicecourse-owlcarousel .individualproject-cards {
+    min-height: 50px;
+    display: inline-block;
+    height: 100%;
+}
+
+.servicecourse-owlcarousel .topproject-cardhead {
+    margin: 15px 0px;
+}
+
+    .servicecourse-owlcarousel .topproject-cardhead h6 {
+        width: 100%;
+        min-height: 25px;
+    }
+
+.counter-course {
+    font-size: 16px;
+    color: #303030;
+    border: 1px solid #eeeeee;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+.coursejour-content {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+    box-shadow: 1px 0px 10px 9px #f6f6f6;
+    margin-left: 50px;
+}
+
+    .coursejour-content:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 10px solid #e8e7e7;
+        border-bottom: 10px solid transparent;
+        top: 40%;
+        left: -10px;
+        z-index: 1;
+    }
+
+    .coursejour-content h6 {
+        font-size: 14px;
+    }
+
+    .coursejour-content p {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+.coursejournery-individbox {
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+
+.coursejournery-listwrapper {
+    padding-left: 20px;
+}
+
+    .coursejournery-listwrapper li {
+        padding-top: 35px;
+        position: relative;
+    }
+
+        .coursejournery-listwrapper li:after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: #eeeeee;
+            top: 125px;
+            left: 20px;
+        }
+
+        .coursejournery-listwrapper li:last-child:after {
+            content: none;
+        }
+
+        .coursejournery-listwrapper li.active .counter-course {
+            color: #c77681;
+        }
+
+        .coursejournery-listwrapper li.active .coursejour-content {
+            background: #b0213b;
+        }
+
+            .coursejournery-listwrapper li.active .coursejour-content h6, .coursejournery-listwrapper li.active .coursejour-content p {
+                color: #fff;
+            }
+
+            .coursejournery-listwrapper li.active .coursejour-content:before {
+                border-right: 10px solid #b0213b;
+            }
+
+
+/*=============Start of the media queries=====================*/
+@media only screen and (max-width: 1200px) {
+
+    .coursefound-accinnerwrap {
+        width: 575px !important;
+    }
+}
+/*=========End of the media 1200===================*/
+@media only screen and (max-width: 767px) {
+    .tadsyllabus-individualcards {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .smallsyllabus-individualcards {
+        display: none;
+        height: 235px;
+    }
+
+    .syllabusheading-panel .syllabus-heading {
+        font-size: 20px;
+    }
+
+    .syllabuscards-listingpanel .contenttext {
+        font-size: 12px;
+    }
+
+    .syllabuscards-listingpanel .labeltext {
+        font-size: 11px;
+    }
+
+    .syllabuscards-listingpanel .list-inline-item {
+        width: 30%;
+        margin-right: 5px;
+    }
+
+    .courseacc-headpanel .accheading {
+        font-size: 14px;
+    }
+
+    .coursefoundation-accordion {
+        margin-right: 0px;
+        border-right: 0px;
+    }
+
+    .coursefound-accinnerwrap {
+        width: 100% !important;
+    }
+
+    .coursecontent-listingpanel {
+        padding: 10px 0px 5px;
+    }
+
+        .coursecontent-listingpanel li {
+            display: flex;
+            align-items: flex-start;
+        }
+
+            .coursecontent-listingpanel li span {
+                padding-left: 10px;
+            }
+
+    .rightfoundation-coursejournery {
+        padding-top: 25px;
+    }
+
+    .coursejournery-listwrapper {
+        padding-left: 0px;
+    }
+
+    .coursejournery-individbox {
+        display: block;
+    }
+
+    .coursejour-content {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+        .coursejour-content:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #e8e7e7;
+            border-top: 0px;
+            top: -10px;
+            left: 6px;
+            z-index: 1;
+        }
+
+    .coursejournery-listwrapper {
+        display: flex;
+        overflow: scroll;
+    }
+
+        .coursejournery-listwrapper li {
+            margin-right: 20px;
+        }
+
+            .coursejournery-listwrapper li.active .coursejour-content:before {
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid #b0213b;
+            }
+
+            .coursejournery-listwrapper li:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: #eeeeee;
+                top: 55px;
+                left: 38px;
+            }
+}
+/*=========End of the media 320 and 767px===============*/
+@media only screen and (max-width: 991px) {
+    .coursefoundation-accordion {
+        border-right: 0px;
+    }
+
+
+    .coursecontent-listingpanel {
+        padding: 10px 0px 5px;
+    }
+
+        .coursecontent-listingpanel li {
+            display: flex;
+            align-items: flex-start;
+        }
+
+            .coursecontent-listingpanel li span {
+                padding-left: 10px;
+            }
+
+    .rightfoundation-coursejournery {
+        padding-top: 25px;
+    }
+
+    .coursejournery-listwrapper {
+        padding-left: 0px;
+    }
+
+    .coursejournery-individbox {
+        display: block;
+    }
+
+    .coursejour-content {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+        .coursejour-content:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #e8e7e7;
+            border-top: 0px;
+            top: -10px;
+            left: 6px;
+            z-index: 1;
+        }
+
+    .coursejournery-listwrapper {
+        display: flex;
+        overflow: scroll;
+    }
+
+        .coursejournery-listwrapper li {
+            margin-right: 20px;
+        }
+
+            .coursejournery-listwrapper li.active .coursejour-content:before {
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid #b0213b;
+            }
+
+            .coursejournery-listwrapper li:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: #eeeeee;
+                top: 55px;
+                left: 38px;
+            }
+}
+/*=========End of the media 992===================*/
+
+/*=============End of the media queries=====================*/
+
+
+
+/*==============End of the raj css 27-10-2018=================*/
+
+

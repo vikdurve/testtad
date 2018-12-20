@@ -1,0 +1,917 @@
+﻿@import "normalize.css";
+
+@import "sm-core-css.css";
+
+@import "animation.css";
+
+@import "navbartheme.css";
+
+@import "main.css";
+
+@import "main2.css";
+
+@import "responsive.css";
+
+.right-con {
+    background-color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.enroll-sect {
+    background-image: url(../images/enroll/enroll-bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: #fff4f2;
+}
+
+.princip-tab {
+}
+
+.enroll-sHead {
+    font-size: 14px;
+    color: #676767;
+}
+
+.enroll-mHead {
+    font-size: 40px;
+    color: #822f23;
+}
+
+.enroll-sect .lower-tab {
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+
+.enroll-sect .lower-inner {
+    position: absolute;
+    top: 155px;
+    left: 300px;
+}
+
+.enroll-sect .info-tab {
+    display: flex;
+}
+
+    .enroll-sect .info-tab span {
+        margin-left: 3px;
+        font-size: 14px;
+    }
+
+.enroll-sect .info-inner {
+    margin-right: 25px;
+    display: -webkit-box;
+    margin-bottom: 13px;
+}
+
+.enroll-sect .lang-box {
+    margin-top: 20px;
+}
+
+
+
+.form-inner {
+    margin-bottom: 15px;
+}
+
+.enroll-btn {
+    background-color: #68c990;
+    color: #fff;
+    width: 100%;
+}
+
+    .enroll-btn:hover {
+        color: #fff;
+    }
+
+
+.enroll-white-btn {
+    border: 1px solid #68c990;
+    color: #68c990;
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 20px;
+    width: 180px;
+    margin-top: 40px;
+    margin-right: 5px;
+}
+
+.terms-para {
+    color: #aaaaaa;
+    text-align: center;
+}
+
+.b-tetx {
+    color: #b0213b;
+}
+
+
+.bt-text, .bt-text:hover {
+    color: #b0213b;
+}
+
+
+
+.mem-box, .enroll-login-form-box-wrp .create-acc, .enroll-frgt-pass-form-box-wrp .create-acc {
+    color: #676767;
+    text-align: center;
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+}
+
+.enroll-login-form-box-wrp .create-acc, .enroll-frgt-pass-form-box-wrp .create-acc {
+    color: #b0213b;
+}
+
+.enroll-form-box-wrp, .enroll-login-form-box-wrp, .enroll-frgt-pass-form-box-wrp {
+    padding-top: 80px;
+    height: 100vh;
+    position: relative;
+}
+
+
+.inc-list .info-inner span {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #676767;
+}
+
+.inc-list .info-inner img {
+    align-self: flex-start;
+}
+
+.right-inner.rev-box {
+    width: 100%;
+    padding: 80px 40px 0;
+    height: 100vh;
+}
+
+.rev-box {
+    display: none;
+}
+
+.flip-box-login {
+    width: 100%;
+    display: none;
+}
+
+.inc-list {
+    /*padding-inline-start: 40px;*/
+}
+
+/*Flipped Content*/
+.amount {
+    color: #303030;
+    margin-top: 50px;
+}
+
+.exp-date {
+    font-size: 14px;
+    color: #ea692c;
+    margin-bottom: 28px;
+    margin-top: -5px;
+}
+
+.what-para {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.rev-box span {
+    display: block;
+}
+
+.flipped-con {
+    display: flex;
+    justify-content: center;
+}
+
+.form-inner {
+    text-align: left;
+}
+
+.rev-box .btn-area {
+    margin-top: 75px;
+}
+
+
+/*Flipping Start*/
+/*FLipping*/
+.flip-box {
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box.active .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.enroll-btn {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+
+/* Style the back side */
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+/*Flipping End*/
+
+/*************Amey ************/
+
+.enroll-form-box-wrp.defaultFormBoxWrp {
+    display: block;
+    backface-visibility: hidden;
+}
+
+.enroll-form-box .form-heading {
+    margin-bottom: 2px;
+    line-height: 1;
+}
+
+.enroll-form {
+    margin-top: 35px;
+}
+
+    .enroll-form .btnArea, .enroll-login-form .btnArea, .enroll-frgt-pass-form .btnArea {
+        padding: 28px 0 25px;
+    }
+
+.enroll-form-box, .mem-box {
+    backface-visibility: inherit;
+}
+
+.enroll-frgt-pass-form-box-wrp {
+    display: none;
+}
+
+/*************Amey ends ************/
+
+
+
+/*SUCESS PAGE*/
+.success-sect {
+    background-image: url('../images/enroll/success-bg.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+    .success-sect .inner-box {
+        text-align: center;
+        position: relative;
+        margin-top: 65px;
+    }
+
+    .success-sect .b-text {
+        color: #303030;
+    }
+
+    .success-sect .info-tab {
+        display: flex;
+        justify-content: center;
+    }
+
+    .success-sect .info-inner {
+        margin-right: 25px;
+        display: -webkit-box;
+        margin-bottom: 20px;
+    }
+
+    .success-sect .info-tab span {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+.order-label {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.order-text {
+    font-size: 14px;
+    color: #303030;
+}
+
+.order-num-box {
+    width: 50%;
+    padding: 10px 0;
+}
+
+.success-sect .order-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.success-sect .dec-head {
+    font-size: 24px;
+    color: #303030;
+    margin-top: 3px;
+}
+
+.success-sect .info-tab {
+    margin-top: 15px;
+}
+
+.success-sect .enroll-btn {
+    width: 180px;
+    margin-top: 40px;
+}
+
+
+
+.back-box {
+    text-align: left;
+    top: 35px;
+    left: 32px;
+    position: absolute;
+    z-index: 1;
+}
+
+    .back-box a {
+        color: #b0213b;
+        position: relative;
+    }
+
+        .back-box a:before {
+            content: "";
+            height: 8px;
+            width: 8px;
+            z-index: 1;
+            position: absolute;
+            border-bottom: 1px solid #b0213b;
+            border-left: 1px solid #b0213b;
+            transform: rotate(45deg);
+            top: 3px;
+            left: -10px;
+        }
+
+/*SUCESS PAGE*/
+.order-inner {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.v-rule {
+    background-color: #aaaaaa;
+    width: 1px;
+    height: 35px;
+    position: relative;
+    top: 15px;
+}
+
+.order-info {
+    display: flex;
+    justify-content: center;
+}
+
+.rating-head {
+    color: #303030;
+    font-size: 14px;
+}
+
+.rating-img-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.rating-img {
+    display: flex;
+}
+
+.rating-box {
+    margin-top: 30px;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 18.6px 1.4px rgba(0, 0, 0, 0.05);
+}
+
+/*ERROR-PAGE*/
+.error-sect {
+    background-image: url('../images/enroll/success-bg.png');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+    .error-sect .inner-box {
+        text-align: center;
+        position: relative;
+        margin-top: 65px;
+    }
+
+    .error-sect .b-text {
+        color: #303030;
+        margin-top: 20px;
+    }
+
+    .error-sect .info-tab {
+        display: flex;
+        justify-content: center;
+    }
+
+    .error-sect .info-inner {
+        margin-right: 25px;
+        display: -webkit-box;
+        margin-bottom: 20px;
+    }
+
+    .error-sect .info-tab span {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .error-sect .order-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .error-sect .dec-head {
+        font-size: 24px;
+        color: #303030;
+        margin-top: 3px;
+    }
+
+    .error-sect .enroll-btn {
+        width: 180px;
+        margin-top: 15px;
+    }
+
+
+/*COUNSELLOR PAGE*/
+.conCoun-sect {
+    position: relative;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom,#fff 60%, #fff4f2 40%);
+}
+
+    .conCoun-sect::after {
+        content: "";
+    }
+
+    .conCoun-sect .left-sect {
+        background-image: url('../images/enroll/counseCon/couns-bg.png');
+        background-repeat: no-repeat;
+        position: relative;
+        height: calc(100vh - 76px);
+        background-position: bottom left;
+    }
+
+    .conCoun-sect .inner-left {
+        position: absolute;
+        left: 300px;
+        top: 265px;
+    }
+
+    .conCoun-sect .m-head {
+        font-size: 40px;
+        color: #822f23;
+    }
+
+    .conCoun-sect .querr-para {
+        color: #676767;
+        font-size: 18px;
+    }
+
+.couns-form-box {
+    width: 400px;
+    background-color: #fff;
+    padding: 40px 30px 50px;
+    box-shadow: 0px 0px 26.88px 5.12px rgba(0, 0, 0, 0.04);
+    position: relative;
+    top: 70px;
+}
+
+.conCoun-sect .dec-head {
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.inp-error p {
+    display: none;
+    color: #fe002e;
+    font-size: 12px;
+}
+
+.conCoun-sect .right-inner.form-box {
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.conCoun-sect .enroll-btn {
+    margin-top: 5px;
+    width: 303px;
+    height: 45px;
+}
+
+.right-inner.dec-box.mt {
+    margin-top: 0;
+}
+
+.counsHidden-box .inner-box {
+    text-align: center;
+}
+
+.counsHidden-box {
+    margin-top: 60px;
+    display: none;
+}
+
+    .counsHidden-box .inner-box p {
+        margin-top: 5px;
+    }
+
+    .counsHidden-box .enroll-btn {
+        margin-top: 35px;
+    }
+
+.couns-form-box.active .counsDisp-box {
+    display: none;
+}
+
+.couns-form-box.active {
+    height: 500px;
+}
+
+    .couns-form-box.active .counsHidden-box {
+        display: block;
+    }
+
+.form-inner.active p {
+    display: block;
+}
+/*MEDIA RULE*/
+
+@media only screen and (max-width: 1200px) {
+    .enroll-sect .lower-inner {
+        top: 55px;
+        left: 210px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .enroll-sect .lower-inner {
+        top: 58px;
+    }
+
+    .enroll-sect .info-inner {
+        margin-right: 15px;
+    }
+
+    .enroll-sect .info-tab span {
+        margin-left: 5px;
+    }
+
+    .enroll-mHead {
+        font-size: 36px;
+    }
+
+    .couns-form-box {
+        width: 355px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    /**********Amey ************/
+
+    .enroll-form-box-wrp {
+        height: auto;
+    }
+
+    /**********Amey ends ************/
+    .enroll-sect .lower-inner {
+        position: relative;
+        top: 0;
+        text-align: center;
+        left: initial;
+    }
+
+    .mem-box {
+        left: 35%;
+    }
+
+    .logo-box {
+        padding: 15px 0;
+    }
+
+    .mem-box {
+        margin-top: 25px;
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        left: auto;
+    }
+
+    .enroll-sect .lower-tab {
+        background-color: #fff4f2;
+    }
+
+    .enroll-sHead {
+        margin-top: 20px;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    .enroll-sect .lower-inner {
+        position: relative;
+        top: 0;
+        text-align: center;
+        left: initial;
+    }
+
+    .left-con {
+        padding: 0;
+    }
+
+    .logo-box {
+        background-color: #fff;
+    }
+
+    .enroll-sHead {
+        font-size: 13px;
+    }
+
+    .enroll-mHead {
+        font-size: 20px;
+    }
+
+    .enroll-sect {
+        background: none;
+    }
+
+        .enroll-sect .info-tab span {
+            font-size: 12px;
+        }
+
+        .enroll-sect .info-inner {
+            margin-right: 15px;
+        }
+
+        .enroll-sect .info-tab span {
+            margin-left: 0;
+        }
+
+        .enroll-sect .info-tab {
+            margin-left: 15px;
+        }
+
+    .lang-box p {
+        font-size: 13px;
+    }
+
+    .enroll-sect .lang-box {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .enroll-label {
+        font-size: 13px;
+    }
+
+
+
+    .mem-box {
+        margin-top: 25px;
+        margin-bottom: 35px;
+        position: static;
+    }
+
+    .logo-box {
+        padding: 15px;
+    }
+
+    .info-inner.lang-box p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-inner {
+        margin-top: 20px;
+    }
+
+
+    .terms-para {
+        padding: 15px 5px 0;
+    }
+
+    .right-con {
+        overflow: visible;
+        height: auto;
+    }
+
+    .back-box a {
+        top: 15px;
+        left: 15px;
+    }
+
+    .flipped-con {
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+
+    .amount {
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    .exp-date {
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+
+    .what-para {
+        margin-bottom: 15px;
+    }
+
+    .flipped-con .enroll-btn {
+        margin-top: 20px;
+    }
+
+    .right-inner.rev-box .enroll-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+    /*SUCESS PAGE*/
+    .success-sect {
+        background: none;
+    }
+
+        .success-sect .dec-head, .success-sect .dec-head span {
+            font-size: 20px;
+            margin-top: 25px;
+        }
+
+    .sucess-para {
+        font-size: 13px;
+    }
+
+    .success-sect .info-tab span {
+        font-size: 13px;
+    }
+
+    .success-sect .info-inner {
+        margin-right: 15px;
+    }
+
+    .success-sect .info-tab span {
+        margin-left: 5px;
+    }
+
+    .rating-head {
+        font-size: 13px;
+    }
+
+    .enroll-white-btn {
+        width: 100%;
+        order: 2;
+        margin-top: 0px;
+    }
+
+    .success-sect .enroll-btn {
+        width: 100%;
+        margin-top: 40px;
+        order: 1;
+    }
+
+    .success-sect .inner-box {
+        margin-top: 40px;
+    }
+
+
+
+    .info-tab {
+        margin-left: 10px;
+    }
+
+
+    /*EROR_PAGE*/
+    .error-sect .enroll-btn {
+        width: 100%;
+        order: 1;
+        margin-top: 15px;
+        padding: 8px;
+    }
+
+    .error-sect .inner-box {
+        margin-top: 40px;
+    }
+
+    .error-sect {
+        background: none;
+    }
+
+        .error-sect .dec-head {
+            font-size: 20px;
+            margin-top: 25px;
+        }
+
+        .error-sect .sucess-para {
+            font-size: 13px;
+            padding: 0 35px;
+        }
+
+        .error-sect .info-tab span {
+            font-size: 13px;
+        }
+
+        .error-sect .info-inner {
+            margin-right: 15px;
+        }
+
+        .error-sect .b-text {
+            font-size: 13px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+    /*COUNSELLOR PAGE*/
+    .conCoun-sect .m-head {
+        font-size: 20px;
+    }
+
+    .conCoun-sect .left-sect {
+        height: auto;
+        background-size: contain;
+        background-color: #fbfbfb;
+    }
+
+    .conCoun-sect .inner-left {
+        position: relative;
+        padding: 45px 0 15px;
+        top: 0;
+        left: 130px;
+        width: 60%;
+    }
+
+    .couns-form-box {
+        width: auto;
+        background-color: #fff;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+    }
+
+    .conCoun-sect .querr-para {
+        font-size: 14px;
+    }
+
+    .conCoun-sect {
+        background-image: none;
+    }
+
+        .conCoun-sect .enroll-btn {
+            width: 100%;
+        }
+
+    .counsHidden-box .inner-box {
+        padding: 15px;
+    }
+
+    .counsHidden-box {
+        margin-top: 15px;
+    }
+
+        .counsHidden-box .inner-box p {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+}
