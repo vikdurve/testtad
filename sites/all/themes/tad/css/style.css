@@ -1,3 +1,227 @@
-/**
- * Place your custom styles here.
- */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+
+/********* Common css **********/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    color: #303030;
+}
+
+
+
+.main-container.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1366px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.navbar.container {
+    width: 1366px;
+    max-width: 100%;
+}
+
+
+
+/********* Common css **********/
+
+/********** Services below hp banner desktop  **********/
+
+.view-id-tad_features .view-content {
+    display: flex;
+    background: #fff;
+    padding: 30px 40px 25px;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 34.4px 5.6px rgba(0, 0, 0, 0.05);
+}
+
+.view-id-tad_features .view-content .field-content {
+    display: flex;
+
+}
+
+.view-id-tad_features .view-content .field-content .img-area {
+    margin-right: 20px;
+}
+
+.view-id-tad_features .view-content .field-content .txt-area h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.view-id-tad_features .view-content .field-content .txt-area p {
+    font-size: 13px;
+    max-width: 275px;
+    line-height: 18px;
+}
+
+.view-id-tad_features .view-content .views-row {
+    padding-right: 15px;
+}
+
+.view-id-tad_features .view-content .views-row:last-child {
+    padding-right: 0;
+}
+
+/********** Services below hp banner desktop ends **********/
+
+/********** Footer desktop **********/
+
+.region-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 105px 0;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer-col .logo-area {
+    margin-bottom: 10px;
+}
+
+.footer-contact .footer-link {
+    position: relative;
+    padding-left: 20px;
+    color: #aaaaaa;
+}
+
+
+/********** Footer desktop ends **********/
+
+/********** Foundation and Advanced courses desktop ***********/
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h4 {
+    color: #822F24;
+    position: relative;
+    padding-bottom: 23px;
+    margin-bottom: 25px;
+    padding-top: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section-header h4:after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    background: #822f23;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #676767;
+    line-height: 1.5;
+}
+
+
+/********** Foundation and Advanced courses desktop ends ***********/
+
+/********** Get a callback desktop *********/
+
+.panel-flexible-inside .panels-flexible-row.callback-row {
+    margin: 0 -15px;
+    background: url(../images/shinybg.png) no-repeat center;
+    height: 100%;
+    background-size: 100% 100%;
+    align-items: center;
+}
+
+/********** Get a callback desktop ends *********/
+
+/********** desktop styling ends **********/
+
+/********** responsive styling starts *********/
+
+/********** Services below hp banner 1024 **********/
+
+@media only screen and (max-width: 1024px) {
+    .view-id-tad_features .view-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/********** Services below hp banner 1024 ends **********/
+
+/********** Services below hp banner 767 **********/
+
+@media only screen and (max-width: 767px) {
+    .view-id-tad_features .view-content {
+        flex-direction: column;
+        padding: 0 20px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 34.4px 5.6px rgba(0, 0, 0, 0.05);
+        background: #fff;
+    }
+
+    .view-id-tad_features .view-content .views-row {
+        padding: 15px 0;
+        border-bottom: 1px solid #f0f0f0;
+        background: #fff;
+        border-radius: 0;
+        box-shadow: none;
+        align-items: center;
+    }
+
+    .view-id-tad_features .view-content .field-content .txt-area p {
+        display: none;
+    }
+
+    .view-id-tad_features .view-content .field-content .txt-area h4 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .view-id-tad_features .view-content .field-content {
+        align-items: center;
+    }
+    .view-id-tad_features .view-content .field-content .img-area img {
+        max-width: 45px;
+
+    }
+}
+
+/********** Services below hp banner 767 ends **********/

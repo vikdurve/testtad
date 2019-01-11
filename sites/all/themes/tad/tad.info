@@ -25,16 +25,6 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-;;stylesheets[all][] = css/style.css
-stylesheets[all][] = css/animation.css
 stylesheets[all][] = css/font-awesome.min.css
-stylesheets[all][] = css/main.css
-stylesheets[all][] = css/main2.css
-stylesheets[all][] = css/mohsin.css
-stylesheets[all][] = css/navbartheme.css
-stylesheets[all][] = css/normalize.css
-stylesheets[all][] = css/onepage.css
-stylesheets[all][] = css/raj.css
-stylesheets[all][] = css/responsive.css
-stylesheets[all][] = css/responsive2.css
-stylesheets[all][] = css/sm-core-css.css
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/style.css
