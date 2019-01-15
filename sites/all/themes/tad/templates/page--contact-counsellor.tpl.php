@@ -101,10 +101,10 @@
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
+            <?php //print render($primary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
+            <?php //print render($secondary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
@@ -169,6 +169,6 @@
 
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
-    <?php print render($page['footer']); ?>
+    <?php //print render($page['footer']); ?>
   </footer>
 <?php endif; ?>

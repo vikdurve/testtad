@@ -68,9 +68,9 @@
   <?php print $scripts; ?>
 </head>
 <body<?php print $body_attributes; ?>>
-  <div id="skip-link">
+  <!-- <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
+  </div> -->
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>

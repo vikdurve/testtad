@@ -1,0 +1,10 @@
+<?php
+
+/* function tad_custom_mod_owlcarousel_settings_alter(&$settings, $instance) {
+  if($instance=='owl-carousel-block18'){
+    echo "<pre>";
+    print_r($settings);
+    echo "</pre>";
+    $settings['loop'] = true;
+  }
+} */

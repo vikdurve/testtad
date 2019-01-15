@@ -1,3 +1,4 @@
 name = "TAD Custom Module"
 description = "TAD Custom Module for writing hooks."
 core = "7.x"
+package = Custom
