@@ -45,8 +45,57 @@ p {
     max-width: 100%;
 }
 
+.fs18{
+    font-size:18px;
+}
 
+.fs20 {
+    font-size: 20px;
+}
 
+.rmedium{
+    font-weight: 500;
+}
+
+a, p, span{
+    font-size: 14px;
+}
+
+.rsemibold {
+    font-weight: 600;
+}
+
+.rnormal, .rmedium, .rsemibold, .rbold, .rexbold {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s ease all;
+  
+}
+
+.btn {
+    transition: 0.5s ease all;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    height: 38px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.rbold {
+    font-weight: 700;
+}
 /********* Common css **********/
 
 /********** Services below hp banner desktop  **********/
@@ -161,7 +210,7 @@ p {
 
 /********** Get a callback desktop *********/
 
-.panel-flexible-inside .panels-flexible-row.callback-row {
+.red-bar-row {
     margin: 0 -15px;
     background: url(../images/shinybg.png) no-repeat center;
     height: 100%;
@@ -225,3 +274,143 @@ p {
 }
 
 /********** Services below hp banner 767 ends **********/
+
+
+.view.view-highlights-of-our-courses .view-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+    text-align: center;
+    
+}
+
+.highlight-course-item {
+    padding: 0 15px;
+}
+
+.highlight-course-item .field-content img{
+    display: table;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.highlight-course-item .field-content h4{
+    margin-bottom: 5px;
+    width: 143px;
+    line-height: 1.4;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.highlight-course-item .field-content p{
+    max-width: 240px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.highlights-of-courses-row{
+    padding: 85px 170px !important;
+}
+
+.meet-mentors-row{
+    padding: 85px 125px 60px !important;
+}
+
+.view.view-meet-your-mentors .view-content {
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 55px;
+    text-align: center;  
+}
+
+.view.view-meet-your-mentors .view-content .views-row{
+    margin-right:30px;
+    display: block; 
+}
+
+.view.view-meet-your-mentors .view-content .views-row:last-child {
+    margin-right: 0;
+}
+
+.mentor .imgArea img {
+    border-radius: 20px;
+}
+
+.mentor .txtArea {
+    padding: 15px;
+    box-shadow: 0px 8px 34.4px 5.6px rgba(0, 0, 0, 0.05);
+    max-width: 88%;
+    margin: 0 auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.mentorName {
+    margin-bottom: 7px;
+    display: inline-block;
+    cursor: auto;
+}
+
+.fs13 {
+    font-size: 13px;
+}
+
+.mentorOrg {
+    color: #aaaaaa;
+    margin-bottom: 12px;
+}
+
+.mentorSocial a {
+    color: #fff;
+    background: #dfd2d2;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-red, .btn-red:focus, .btn-red:active, .btn-red:not(:disabled):not(.disabled).active, .btn-red:not(:disabled):not(.disabled):active {
+    border: 1px solid #b33427;
+    width: 180px;
+    background-image: -moz-linear-gradient( 90deg, rgb(179,52,39) 0%, rgb(210,62,47) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(179,52,39) 0%, rgb(210,62,47) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(179,52,39) 0%, rgb(210,62,47) 100%);
+}
+
+.btn-red:hover {
+    color: #fff;
+}
+
+.shinyBgDiv {
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.shinyBgDiv p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btnTrans {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #fff;
+    width: 180px;
+    max-width: 100%;
+    padding: 7px 0;
+    margin-left: 35px;
+}
+
