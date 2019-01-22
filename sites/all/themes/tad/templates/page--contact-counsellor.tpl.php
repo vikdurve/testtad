@@ -75,7 +75,7 @@
  */
 ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="<?php print $container_class; ?>">
+  <div class="<?php print $container_class; ?> flex">
     <div class="navbar-header">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -133,7 +133,7 @@
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
-    <section<?php print $content_column_class; ?>>
+    <section<?php //print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
