@@ -855,3 +855,78 @@ a:hover {
 }
 
 /**Why upskill with TAD end**/
+
+/**Journey of courses start**/
+.panels-flexible-2 .journey-of-courses-row {
+    background: #fbfbfb;
+    padding: 60px 110px 85px;
+}
+
+.telegram-pane {
+    padding-top: 75px;
+    width: 43px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.journey-box {
+    position: relative;
+    margin-right: 20px;
+}
+
+.journey-of-courses-row .item-even {
+    margin-top: 25px;
+}
+
+.step-num {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.step-num h4 {
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+}
+
+.journey-box-text {
+    background: #fff;
+    padding: 30px 15px 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 34px 5px rgba(0, 0, 0, 0.05);
+    margin: auto;
+    margin-bottom: 20px !important;
+}
+
+.journey-box-text:before {
+    content: '';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    top: -20px;
+    left: 0;
+    right: 0;
+    width: 18px;
+    margin: auto;
+}
+
+.journey-title h3 {
+    color: #303030;
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/**Journey of courses end**/
