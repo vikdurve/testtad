@@ -1,0 +1,4 @@
+name = "Login Block"
+description = "This is Custom Login Block. Provide Login and Forgot Password functionality"
+core = "7.x"
+package = Custom

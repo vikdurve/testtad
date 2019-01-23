@@ -1,0 +1,4 @@
+name = "Custom Bock"
+description = "This is Custom Block."
+core = "7.x"
+package = Custom

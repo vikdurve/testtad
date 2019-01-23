@@ -1,0 +1,80 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function login_block_block_info() {
+  $blocks['login-block'] = array(
+    'info' => t('Custom Login Block'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function login_block_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'login-block':
+      $block['subject'] = t('Custom Login Block');
+      $block['content'] = login_content();
+      break;
+  }
+  return $block;
+}
+
+function login_content() {
+
+  global $user;
+
+  $output = "<div class='login-section'>";
+
+  if(!user_is_logged_in()){
+
+    module_load_include('inc', 'user', 'user.pages');
+    
+    $login_form = '<div class="user-login-form"> ';
+    $elements = drupal_get_form("user_login"); 
+    $login_form .= drupal_render($elements);
+    $login_form .= '</div>';
+
+    $reset_pass_form = '<div class="user-pass-reset-form"> ';
+    $elements = drupal_get_form('user_pass');
+    $reset_pass_form .= drupal_render($elements);   
+    $reset_pass_form .= '</div>';
+
+    $output .= $login_form . $reset_pass_form;
+
+  }else{
+    
+    $user_info = '<div class="user-profile-region">';
+      $user_info .= $user->name;
+    $user_info .= '</div>';
+
+    $user_info .= '<div class="user-info">';
+
+      $user_info .= '<div class="user-name-section">';
+        $user_info .= $user->name;
+      $user_info .= '</div>';
+      $user_info .= '<div class="user-email-section">';
+        $user_info .= $user->mail;
+      $user_info .= '</div>';
+
+      $user_info .= "<div class='my_courses'>";
+        $user_info .= "<a href='#'>My Courses & Tutorials</a>";
+      $user_info .= "</div>";
+
+      $user_info .= '<div class="user-logout-section">';
+        $user_info .= "<a class='btn' href='user/logout'>Logout</a>";
+      $user_info .= '</div>';
+
+    $user_info .= '</div>';
+
+    $output .= $user_info;
+    
+  }
+  $output .=  "</div>";
+  return $output;
+}

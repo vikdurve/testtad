@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_block_block_info() {
+  $blocks['custom-block'] = array(
+    'info' => t('My Custom Block'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function custom_block_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'custom-block':
+      $block['subject'] = t('Block Title');
+      $block['content'] = t('Hello World!');
+      break;
+  }
+  return $block;
+}
