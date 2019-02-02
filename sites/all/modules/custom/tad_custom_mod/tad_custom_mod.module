@@ -1,10 +1,22 @@
 <?php
 
-/* function tad_custom_mod_owlcarousel_settings_alter(&$settings, $instance) {
-  if($instance=='owl-carousel-block18'){
-    echo "<pre>";
-    print_r($settings);
-    echo "</pre>";
-    $settings['loop'] = true;
+/**
+ * Implements hook_form_alter()
+ */
+function tad_custom_mod_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == "webform_client_form_36" || $form_id == "webform_client_form_31") {
+    /**Add Terms & Condition block at bottom of webform **/ 
+    $block = module_invoke('block', 'block_view', '6');  
+    $block_output = render($block['content']);  
+    $form['actions']['submit']['#suffix'] = $block_output;
+  }       
+
+  if ($form_id == 'user_login') {
+    $form['name']['#attributes']['placeholder'] = t('Username');
+    $form['pass']['#attributes']['placeholder'] = t('Password');
   }
-} */
+
+  if ($form_id == 'user_pass') {
+    $form['name']['#attributes']['placeholder'] = t('Enter email id');   
+  }
+}

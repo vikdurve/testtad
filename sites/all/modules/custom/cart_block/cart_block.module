@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function cart_block_block_info() {
+  $blocks['cart-block'] = array(
+    'info' => t('Custom Cart Block'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function cart_block_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'cart-block':
+      $block['subject'] = t('Custom Cart Block');
+      $block['content'] = cart_content();
+      break;
+  }
+  return $block;
+}
+
+function cart_content() { 
+
+  global $base_url;
+  $output = "<img src='$base_url/sites/all/themes/tad/images/cart.png' alt='cart-img'>";
+  $output .="<span class=\"cart-counter\">1</span>";
+  
+  return $output;
+}

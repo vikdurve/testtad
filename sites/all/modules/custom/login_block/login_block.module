@@ -28,32 +28,43 @@ function login_block_block_view($delta = '') {
 function login_content() {
 
   global $user;
+  global $base_url;
 
   $output = "<div class='login-section'>";
 
   if(!user_is_logged_in()){
 
     module_load_include('inc', 'user', 'user.pages');
+      
+    $login_form =  '<div class="user-login-trigger hidden-xs"> ';
+    $login_form .= '<a href="javascript:void(0)" class="btn btn-border btnLogin">Log In</a>';    
+    $login_form .= '</div>';  
     
-    $login_form = '<div class="user-login-form"> ';
-    $elements = drupal_get_form("user_login"); 
-    $login_form .= drupal_render($elements);
-    $login_form .= '</div>';
+    $login_form .= '<div class="user-login-wrap"> ';  
+        $login_form .= '<div class="user-login-form"> ';
+        $login_form .= '<h2 class="form-head">Login</h2>';
+        $elements = drupal_get_form("user_login"); 
+        $login_form .= drupal_render($elements);
+        $login_form .= '<a href="javascript:void(0)" class="frg-pass-link tad-red form-link">Forgot Password</a>';
+        $login_form .= '</div>';
 
-    $reset_pass_form = '<div class="user-pass-reset-form"> ';
-    $elements = drupal_get_form('user_pass');
-    $reset_pass_form .= drupal_render($elements);   
-    $reset_pass_form .= '</div>';
+        $reset_pass_form = '<div class="user-pass-reset-form"> ';
+        $reset_pass_form .= '<h2 class="form-head">Forgot Password</h2>';
+        $elements = drupal_get_form('user_pass');
+        $reset_pass_form .= drupal_render($elements);   
+        $reset_pass_form .= '<a href="javascript:void(0)" class="login-link tad-red form-link">Login</a>';
+        $reset_pass_form .= '</div>';
+    $reset_pass_form .= '</div>';  
 
     $output .= $login_form . $reset_pass_form;
 
   }else{
     
-    $user_info = '<div class="user-profile-region">';
-      $user_info .= $user->name;
+    $user_info =  '<div class="user-profile-trigger"> ';
+      $user_info .= '<a href="javascript:void(0)" class="btnProfile">'.$user->name.'</a>';    
     $user_info .= '</div>';
-
-    $user_info .= '<div class="user-info">';
+    
+    $user_info .= '<div class="user-profile-info-wrap">';
 
       $user_info .= '<div class="user-name-section">';
         $user_info .= $user->name;
@@ -67,7 +78,7 @@ function login_content() {
       $user_info .= "</div>";
 
       $user_info .= '<div class="user-logout-section">';
-        $user_info .= "<a class='btn' href='user/logout'>Logout</a>";
+        $user_info .= "<a class='btn btn-border hidden-xs' href='$base_url/user/logout'>Logout</a>";
       $user_info .= '</div>';
 
     $user_info .= '</div>';

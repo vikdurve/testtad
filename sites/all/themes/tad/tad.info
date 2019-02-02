@@ -10,6 +10,7 @@ php = 5.3.0
 ;;;;;;;;;;;;;;;;;;;;;
 
 regions[navigation]     = 'Navigation'
+regions[sub_navigation]     = 'Sub Navigation'
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
@@ -28,3 +29,10 @@ regions[page_bottom]    = 'Page bottom'
 stylesheets[all][] = css/font-awesome.min.css
 stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style2.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/custom.js

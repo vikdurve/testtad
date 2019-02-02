@@ -103,6 +103,8 @@
             // Lets extract our width and height giving priority to the data attributes.
             var innerWidth = $this.data('inner-width');
             var innerHeight = $this.data('inner-height');
+            var customClasses = $this.data('classes');
+
             if (typeof innerWidth != 'undefined' && typeof innerHeight != 'undefined') {
                 var params = $.urlDataParams(innerWidth, innerHeight);
             } else {
@@ -115,8 +117,17 @@
 
             params.html = '<div id="colorboxNodeLoading"></div>';
             params.onComplete = function () {
-                $this.colorboxNodeGroup();
+                  $this.colorboxNodeGroup();
+                  $('#cboxOverlay').addClass(customClasses);
+                  $('#colorbox').addClass(customClasses);
+                  $('#colorbox').addClass('open');
+                  $('#colorbox').css("overflow", "visible");
             }
+            params.onClosed = function () {
+                $('#cboxOverlay').removeClass(customClasses);
+                $('#colorbox').removeClass(customClasses);
+                $('#colorbox').removeClass('open');
+            };
             params.open = true;
 
             // Launch our colorbox with the provided settings

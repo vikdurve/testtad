@@ -1,0 +1,230 @@
+/**Nawaz Bhai Khan**/
+
+.gradientBannerWrp {
+    background-image: -moz-linear-gradient(0deg, rgb(130, 47, 35) 0%, rgb(192, 74, 57) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(130, 47, 35) 0%, rgb(192, 74, 57) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(130, 47, 35) 0%, rgb(192, 74, 57) 100%);
+}
+
+.mentors-top-row {
+    background-image: -webkit-linear-gradient(0deg, rgb(130, 47, 35) 0%, rgb(192, 74, 57) 100%);
+}
+
+.mentors-top-row .panels-flexible-row-inside-first {
+    padding: 50px 0 42px;
+    justify-content: space-between;
+    max-width: 1135px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.mentors-top-row .pane-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mentors-top-row .pane-content h4 {
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    margin-top: -10px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.mentors-top-row .pane-content p {
+    max-width: 515px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.mentors-top-row .pane-content li {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.mentors-top-row .pane-content li::before {
+    content: "";
+    background-image: url(../images/gradient-check.png);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-right: 29px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 4px;
+}
+
+/********************/
+
+.mentors-listing-row {
+    padding: 40px 0 0 !important;
+    background: #fbfbfb;
+}
+
+.mentors-listing-row .section-header h4 {
+    margin-bottom: 0px;
+}
+
+.mentors-listing-row .section-header .pane-content {
+    display: none;
+}
+
+.view-id-meet_your_mentors {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 15px 85px 0;
+}
+
+.view-id-meet_your_mentors .bef-select-as-radios {
+    display: flex;
+    width: 100%;
+}
+
+.view-id-meet_your_mentors .bef-select-as-radios .radio + .radio,
+.view-id-meet_your_mentors .bef-select-as-radios .checkbox + .checkbox {
+    margin-top: 0px;
+}
+
+.view-id-meet_your_mentors .form-type-radio label {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: none;
+    color: #303030;
+    border: 1px solid #c2c2c2;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.view-id-meet_your_mentors .form-type-radio input {
+    display: none
+}
+
+/* .view-id-meet_your_mentors .form-type-radio input:checked {
+background: red
+} */
+
+.view-id-meet_your_mentors .view-filters {
+    padding-left: 20px;
+}
+
+/*********/
+
+.mentors-listing-row .view.view-meet-your-mentors .view-content .views-row {
+    margin-bottom: 40px;
+}
+
+.mentors-listing-row .view.view-meet-your-mentors .view-content {
+    flex-wrap: wrap;
+}
+
+/******************/
+
+.foundation-advanced-course-row {
+    padding: 40px 90px 0px !important;
+}
+
+.panels-flexible-row-4-3-inside {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.shinyBgDiv p span {
+    font-weight: normal;
+}
+
+/*********Media Query***********/
+
+@media only screen and (max-width: 1201px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 991px) {
+
+    .mentors-top-row .panels-flexible-row-inside-first {
+        padding: 50px 15px;
+    }
+
+    .mentors-top-row .pane-content {
+        flex-direction: column;
+    }
+
+    .mentors-top-row .pane-content h4 {
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mentors-top-row .pane-content p {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mentor-right-top {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .mentors-top-row .pane-content li {
+        font-size: 12px;
+    }
+
+    /****/
+    .mentors-listing-row {
+        padding: 30px 0 0 !important;
+    }
+
+    .view-id-meet_your_mentors {
+        padding: 15px 15px 0;
+    }
+
+    .view-id-meet_your_mentors .view-filters {
+        padding-left: 0px;
+        width: 100%;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+
+    .foundation-advanced-course-row {
+        padding: 40px 15px 0px !important;
+    }
+
+    .view-id-meet_your_mentors {
+        padding: 15px 15px 0;
+    }
+
+    .view-id-meet_your_mentors .bef-select-as-radios {
+        display: block;
+        width: 100%;
+    }
+
+    .view-id-meet_your_mentors .bef-select-as-radios {
+        width: 762px;
+        overflow: auto;
+        display: flex;
+    }
+
+    .footer .nav > li {
+        border-bottom: none;
+    }
+
+    .footer-social a:last-child {
+        margin-right: 0;
+    }
+
+    .footer-social a {
+        margin-right: 40px;
+    }
+
+    /****/
+}
+
+@media only screen and (max-width: 359px) {}
