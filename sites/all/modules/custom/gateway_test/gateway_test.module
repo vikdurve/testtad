@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function gateway_test_menu() {
+  $items['pgrequest'] = array(
+    'title' => 'PGrequest',
+    'page callback' => 'request_page',
+    'access callback' => TRUE,
+  );
+
+  $items['pgresponse'] = array(
+    'title' => 'PGresponse',
+    'page callback' => 'response_page',
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for /request.
+ */
+function request_page() {
+  return 'Place your request here.';
+}
+
+function response_page() {
+    return 'Get your response here.';
+  }

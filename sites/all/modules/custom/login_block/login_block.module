@@ -42,7 +42,7 @@ function login_content() {
     
     $login_form .= '<div class="user-login-wrap"> ';  
         $login_form .= '<div class="user-login-form"> ';
-        $login_form .= '<h2 class="form-head">Login</h2>';
+        $login_form .= '<h2 class="form-head">Log In</h2>';
         $elements = drupal_get_form("user_login"); 
         $login_form .= drupal_render($elements);
         $login_form .= '<a href="javascript:void(0)" class="frg-pass-link tad-red form-link">Forgot Password</a>';

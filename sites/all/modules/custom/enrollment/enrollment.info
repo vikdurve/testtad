@@ -1,0 +1,4 @@
+name = "Enrollment Module"
+description = "This is Enrollment Module."
+core = "7.x"
+package = Custom

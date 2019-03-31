@@ -80,6 +80,8 @@
  * @ingroup templates
  */
 ?>
+
+<div class="bec-men-pop-wrap">
 <?php
     $block = module_invoke('block', 'block_view', '7');  
     $block_output = "<div class='reason-bcm-mentr-wrap'>";
@@ -124,3 +126,4 @@
     <?php endif; ?>
   <?php print render($content['comments']); ?>
 </article>
+</div>

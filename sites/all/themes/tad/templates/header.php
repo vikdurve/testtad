@@ -2,6 +2,19 @@
   global $base_url; 
   global $user;
 ?>
+<?php
+	  $become_mentor_block = module_invoke('custom_popup', 'block_view', 'become-mentor-popup');
+	  print render($become_mentor_block['content']);
+	  
+	  $callback_block = module_invoke('custom_popup', 'block_view', 'callback-popup');
+    print $callback_block['content'];
+    
+    $join_tad_block = module_invoke('custom_popup', 'block_view', 'join-tad-popup');
+    print $join_tad_block['content'];
+    
+    $get_in_touch_block = module_invoke('custom_popup', 'block_view', 'get-in-touch-popup');
+	  print $get_in_touch_block['content'];
+?>
 
 <header id="navbar" role="banner" class="navbar navbar-default">
   <div class="<?php //print $container_class; ?> tad-nav">

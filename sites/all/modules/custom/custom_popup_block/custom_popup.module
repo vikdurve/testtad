@@ -1,0 +1,201 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_popup_block_info() {
+  $blocks['become-mentor-popup'] = array(
+    'info' => t('Become Mentor Popup'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['callback-popup'] = array(
+    'info' => t('Callback Popup'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['join-tad-popup'] = array(
+    'info' => t('Join TAD Popup'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['get-in-touch-popup'] = array(
+    'info' => t('Get in Touch Popup'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function custom_popup_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'become-mentor-popup':
+      $block['subject'] = t('Become Mentor Popup Block');
+      $block['content'] = become_mentor_popup_content();
+      break;
+	  
+	case 'callback-popup':
+      $block['subject'] = t('Callback Popup Block');
+      $block['content'] = callback_popup_content();
+      break;
+    
+  case 'join-tad-popup':
+      $block['subject'] = t('Join TAD Popup Block');
+      $block['content'] = join_tad_popup_content();
+      break;
+
+  case 'get-in-touch-popup':
+      $block['subject'] = t('Get in Touch Popup Block');
+      $block['content'] = get_in_touch_popup_content();
+      break;
+      
+  }
+
+  return $block;
+}
+
+function become_mentor_popup_content() {
+
+  global $user;
+  global $base_url;
+  
+  $block = module_invoke('webform', 'block_view', 'client-block-30');
+  /* 
+    Add following code to place trigger button for popup
+    <div class="join-btn-area"><button class="btn btn-red rmedium" data-target="#become-mentor-modal" data-toggle="modal" type="button">Join Us</button></div>
+  */
+
+  $output = ''; 
+  
+  $reason_block = module_invoke('block', 'block_view', '7');  
+  $reason_block_output = "<div class='modal-big-text-wrap'>";
+  $reason_block_output .= render($reason_block['content']); 
+  $reason_block_output .= "</div>";
+  
+  $output .= '
+  <div id="become-mentor-modal" class="tad-modal tad-modal-big become-mentor-modal modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"></button>';
+        $output .= $reason_block_output;  
+        $output .= '<div class="modal-big-form-wrap">';
+          $output .= drupal_render($block['content']);
+        $output .= '</div>';
+        $output .= '      
+        </div>
+        
+      </div>
+
+    </div>
+  </div>';
+
+  // $output .= drupal_render($block['content']);
+  return $output;
+}
+
+function callback_popup_content() {
+  global $user;
+  global $base_url;
+  
+  $block = module_invoke('webform', 'block_view', 'client-block-36');
+  
+  /* 
+    Add following code to place trigger button for popup
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#callback-modal">Open Modal</button> 
+  */
+  
+  $output = ''; 
+  
+  $output .= '
+  <div id="callback-modal" class="tad-modal callback-modal modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"></button>';
+        $output .= drupal_render($block['content']);
+        $output .= '      
+        </div>
+        
+      </div>
+
+    </div>
+  </div>';
+
+  return $output;
+}
+
+function join_tad_popup_content() {
+  global $user;
+  global $base_url;
+  
+  $block = module_invoke('webform', 'block_view', 'client-block-82');
+
+  /* 
+    Add following code to place trigger button for popup
+    <button class="callback-btn btn btnTrans" data-target="#join-tad-modal" data-toggle="modal" type="button">Join TAD</button>
+  */
+  
+  $output = ''; 
+  
+  $output .= '
+  <div id="join-tad-modal" class="tad-modal callback-modal modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"></button>';
+        $output .= drupal_render($block['content']);
+        $output .= '      
+        </div>
+        
+      </div>
+
+    </div>
+  </div>';
+
+  return $output;
+  
+}
+
+function get_in_touch_popup_content() {
+  global $user;
+  global $base_url;
+  
+  $block = module_invoke('webform', 'block_view', 'client-block-87');
+
+  /* 
+    Add following code to place trigger button for popup
+    <button class="callback-btn btn btnTrans" data-target="#get-in-touch-modal" data-toggle="modal" type="button">Get in Touch</button>
+  */
+  
+  $output = ''; 
+  
+  $output .= '
+  <div id="get-in-touch-modal" class="tad-modal callback-modal modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"></button>';
+        $output .= drupal_render($block['content']);
+        $output .= '      
+        </div>
+        
+      </div>
+
+    </div>
+  </div>';
+
+  return $output;
+}

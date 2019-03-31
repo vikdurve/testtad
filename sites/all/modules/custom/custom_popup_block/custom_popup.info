@@ -1,0 +1,4 @@
+name = "Custom Popup"
+description = "Custom block to render forms in Popup"
+core = "7.x"
+package = Custom

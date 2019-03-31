@@ -73,16 +73,19 @@
     display: none;
 }
 
-.view-id-meet_your_mentors {
-    max-width: 1366px;
-    margin: 0 auto;
-    padding: 15px 85px 0;
-}
+
 
 .view-id-meet_your_mentors .bef-select-as-radios {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
 }
+
+.meet-mentors-block .views-exposed-form .views-exposed-widget {
+    float: none;
+    padding: 0;
+}
+
 
 .view-id-meet_your_mentors .bef-select-as-radios .radio + .radio,
 .view-id-meet_your_mentors .bef-select-as-radios .checkbox + .checkbox {
@@ -99,6 +102,14 @@
     font-size: 13px;
 }
 
+.view-id-meet_your_mentors .form-type-radio .control-label.cat-active {
+    border: 1px solid #b33427;
+    background-image: -moz-linear-gradient( 90deg, rgb(179, 52, 39) 0%, rgb(210, 62, 47) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(179, 52, 39) 0%, rgb(210, 62, 47) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(179, 52, 39) 0%, rgb(210, 62, 47) 100%);
+    color: #fff;
+}
+
 .view-id-meet_your_mentors .form-type-radio input {
     display: none
 }
@@ -108,8 +119,10 @@ background: red
 } */
 
 .view-id-meet_your_mentors .view-filters {
-    padding-left: 20px;
+    margin-bottom: 25px;
 }
+
+
 
 /*********/
 
@@ -182,9 +195,6 @@ background: red
         padding: 30px 0 0 !important;
     }
 
-    .view-id-meet_your_mentors {
-        padding: 15px 15px 0;
-    }
 
     .view-id-meet_your_mentors .view-filters {
         padding-left: 0px;
@@ -197,10 +207,6 @@ background: red
         padding: 40px 15px 0px !important;
     }
 
-    .view-id-meet_your_mentors {
-        padding: 15px 15px 0;
-    }
-
     .view-id-meet_your_mentors .bef-select-as-radios {
         display: block;
         width: 100%;
@@ -210,6 +216,8 @@ background: red
         width: 762px;
         overflow: auto;
         display: flex;
+        justify-content: flex-start;
+        padding-top: 0;
     }
 
     .footer .nav > li {

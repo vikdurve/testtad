@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function enrollment_menu() {
+  $items['enrol/%node'] = array(
+    'title' => 'Enrol',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('enrol_process_form',1),
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for /enrol.
+ */
+function enrol_process_form($form, &$form_state,$node) {
+
+  global $base_url;
+  $theme_path = url(drupal_get_path('theme', 'tad'));
+  
+  $node_wrapper = entity_metadata_wrapper('node', $node);
+  $category = strtoupper($node_wrapper->field_category_of_course->value()->name);
+  $name = $node_wrapper->field_course_display_name->value();
+  $duration = $node_wrapper->field_duration->value();
+  $module = $node_wrapper->field_modules->value();
+  $effort = $node_wrapper->field_effort->value();
+  $course_type = $node_wrapper->field_course_type->value()->name;
+  $lang = $node_wrapper->field_course_language->value()->name;
+  
+  
+  $course_block = '<div class="container-fluid enroll-sect">
+      <div class="row">
+          <div class="col-lg-8 left-con">
+              <div class="upper-tab">
+
+                  <div class="lower-tab">
+                      <div class="lower-inner">
+                          <div class="princip-tab">
+                              <h3 class="enroll-sHead rbold">'. $category .'</h3>
+                              <h1 class="enroll-mHead rbold">'. $name .'</h1>
+                          </div>
+                          <div class="info-tab">
+                              <div class="info-inner">
+                                  <img src="'. $theme_path .'/images/enroll/calender.png" class="img-responsive">
+                                  <span class="rnormal"><span class="numerical">'. $duration .'</span></span>
+                              </div>
+                              <div class="info-inner">
+                                  <img src="'. $theme_path .'/images/enroll/link.png" class="img-responsive">
+                                  <span class="rnormal"><span class="numerical">'. $module .'</span> Modules</span>
+                              </div>
+                              <div class="info-inner">
+                                  <img src="'. $theme_path .'/images/enroll/clock.png" class="img-responsive">
+                                  <span class="rnormal"><span class="numerical">'. $effort .'</span> </span>
+                              </div>
+                          </div>
+                          <div class="info-inner lang-box">
+                              <p class="rnormal">Language: '. $lang .'</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>';
+
+  $privacy_policy = "By clicking above, I agree to TAD's <a class=\"colorbox-node\" href=\"$base_url/node/54\">Terms & Conditions</a> and <a class=\"colorbox-node\" href=\"$base_url/node/55\">Privacy Policy</a>";
+
+  $form['first_name'] = array(
+    '#prefix' => $course_block,
+		'#title' => t('Name'),
+		'#description' => t('Enter full name'),
+		'#type' => 'textfield',
+    '#required' => TRUE,
+    '#attributes' => array('placeholder'=>t('Enter full name'))
+	);
+
+  $form['mobile'] = array(
+		'#title' => t('Last Name'),
+		'#description' => t('Enter mobile number'),
+		'#type' => 'textfield',
+    '#required' => TRUE,
+    '#attributes' => array('placeholder'=>t('Enter mobile number'))
+	);
+
+	$form['email'] = array(
+		'#title' => t('Email'),
+		'#description' => t('Enter email id'),
+		'#type' => 'textfield',
+    '#required' => TRUE,
+    '#attributes' => array('placeholder'=>t('Enter email id'))
+	);
+	
+	$form['submit'] = array(
+  		'#type' => 'submit',
+      '#value' => t('Continue'),
+      '#suffix' => $privacy_policy,
+	);
+	
+	return $form;
+
+}

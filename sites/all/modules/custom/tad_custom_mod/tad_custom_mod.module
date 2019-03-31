@@ -4,19 +4,67 @@
  * Implements hook_form_alter()
  */
 function tad_custom_mod_form_alter(&$form, &$form_state, $form_id) {
-  if($form_id == "webform_client_form_36" || $form_id == "webform_client_form_31") {
-    /**Add Terms & Condition block at bottom of webform **/ 
+
+  /** Store webform-id in $webform_ids array  **/
+  $webform_ids = array(
+    'webform_client_form_36',
+    'webform_client_form_31',
+    'webform_client_form_30',
+    'webform_client_form_82',
+    'webform_client_form_87'
+  ); 
+
+  /** Add Terms & Condition block at bottom of webform and set captch-placeholder in $webform_ids **/
+  if(in_array($form_id, $webform_ids)) {  
     $block = module_invoke('block', 'block_view', '6');  
     $block_output = render($block['content']);  
     $form['actions']['submit']['#suffix'] = $block_output;
+    $form['captcha']['#after_build'][] = 'set_captcha_placeholder';
   }       
-
+  
+  /** Set placeholder in log-in form **/
   if ($form_id == 'user_login') {
     $form['name']['#attributes']['placeholder'] = t('Username');
     $form['pass']['#attributes']['placeholder'] = t('Password');
   }
 
+  /** Set placeholder in forgot password form **/
   if ($form_id == 'user_pass') {
     $form['name']['#attributes']['placeholder'] = t('Enter email id');   
+    $form['name']['#title'] = t('Enter your email id');
   }
+
+  /** Hide course field on get-in-touch form**/
+  if ($form_id == 'webform_client_form_87') {
+    $form['submitted']['course']['#prefix'] = '<div style="display:none;">';
+    $form['submitted']['course']['#suffix'] = '</div>';
+  }
+  
 }
+
+function set_captcha_placeholder(&$element) {
+  $element['captcha_widgets']['captcha_response']['#attributes']['placeholder'] = t('Answer');
+  return $element;
+}
+
+/**
+ * Implements hook_form_views_exposed_form_alter()
+ */
+function tad_custom_mod_form_views_exposed_form_alter(&$form, &$form_state) {
+
+  /** Store form-id of views-exposed-form in $form_ids array  **/
+  $form_ids = array(
+    'views-exposed-form-become-a-mentor-records-page',
+    'views-exposed-form-contact-counsellor-submissions-page',
+    'views-exposed-form-get-callback-submission-page',
+    'views-exposed-form-join-tad-page',
+    'views-exposed-form-get-in-touch-submission-page'
+  ); 
+
+  /** Set date-format of exposed date-filters of forms in $form_ids **/
+  if(in_array($form['#id'], $form_ids)) {
+    $form['date_filter']['min']['#date_format'] = 'd F Y';
+    $form['date_filter']['max']['#date_format'] = 'd F Y';
+  }
+
+ }
